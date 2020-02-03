@@ -15,6 +15,10 @@ class CreateMensajesTable extends Migration
     {
         Schema::create('mensajes', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->longText('descripcion')->nullable();
+            $table->binary('archivo')->nullable();
+            $table->bigInteger('idTicket');
+            $table->bigInteger('idUsuario');
             $table->timestamps();
         });
     }

@@ -15,6 +15,10 @@ class CreateNotariasTable extends Migration
     {
         Schema::create('notarias', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->smallInteger('numero');
+            $table->char('telefono', 10);
+            $table->bigInteger('idMunicipio');
+            $table->bigInteger('idDireccion');
             $table->timestamps();
         });
     }

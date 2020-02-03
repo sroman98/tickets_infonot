@@ -13,9 +13,9 @@ class CreateEstatusesTable extends Migration
      */
     public function up()
     {
-        Schema::create('estatuses', function (Blueprint $table) {
+        Schema::create('estatus', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->timestamps();
+            $table->string('nombre', 50);
         });
     }
 
