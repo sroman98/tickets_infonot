@@ -17,6 +17,8 @@ class CreateMunicipiosTable extends Migration
             $table->bigIncrements('id');
             $table->string('nombre', 50);
             $table->bigInteger('idEstado');
+
+            $table->foreign('idEstado')->references('id')->on('estados');
         });
     }
 

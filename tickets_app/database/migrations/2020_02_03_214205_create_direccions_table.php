@@ -22,6 +22,9 @@ class CreateDireccionsTable extends Migration
             $table->smallInteger('cp');
             $table->bigInteger('idEstado');
             $table->bigInteger('idMunicipio');
+
+            $table->foreign('idEstado')->references('id')->on('estados');
+            $table->foreign('idMunicipio')->references('id')->on('municipios');
         });
     }
 

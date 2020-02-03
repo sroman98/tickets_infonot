@@ -26,6 +26,10 @@ class CreateUsuariosTable extends Migration
             $table->bigInteger('idRol')->nullable();
             $table->timestamps();
             $table->rememberToken();
+
+            $table->foreign('idNotaria')->references('id')->on('notarias');
+            $table->foreign('idDepartamento')->references('id')->on('departamentos');
+            $table->foreign('idRol')->references('id')->on('roles');
         });
     }
 

@@ -20,6 +20,9 @@ class CreateNotariasTable extends Migration
             $table->bigInteger('idMunicipio');
             $table->bigInteger('idDireccion');
             $table->timestamps();
+
+            $table->foreign('idMunicipio')->references('id')->on('municipios');
+            $table->foreign('idDireccion')->references('id')->on('direcciones');
         });
     }
 

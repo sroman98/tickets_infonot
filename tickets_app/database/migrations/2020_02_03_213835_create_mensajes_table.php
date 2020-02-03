@@ -20,6 +20,9 @@ class CreateMensajesTable extends Migration
             $table->bigInteger('idTicket');
             $table->bigInteger('idUsuario');
             $table->timestamps();
+
+            $table->foreign('idTicket')->references('id')->on('tickets');
+            $table->foreign('idUsuario')->references('id')->on('usuarios');
         });
     }
 

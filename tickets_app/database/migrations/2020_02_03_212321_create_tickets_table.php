@@ -21,6 +21,11 @@ class CreateTicketsTable extends Migration
             $table->bigInteger('idEstatus');
             $table->bigInteger('idDepartamento');
             $table->timestamps();
+
+            $table->foreign('idUsuario')->references('id')->on('usuarios');
+            $table->foreign('idUsAsignado')->references('id')->on('usuarios');
+            $table->foreign('idEstatus')->references('id')->on('estatus');
+            $table->foreign('idDepartamento')->references('id')->on('departamentos');
         });
     }
 
