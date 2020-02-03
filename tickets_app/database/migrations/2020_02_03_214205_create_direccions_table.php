@@ -17,7 +17,7 @@ class CreateDireccionsTable extends Migration
             $table->bigIncrements('id');
             $table->string('calle', 50);
             $table->smallInteger('numExt');
-            $table->smallInteger('numInt');
+            $table->smallInteger('numInt')->nullable();
             $table->string('colonia', 50);
             $table->smallInteger('cp');
             $table->bigInteger('idEstado');
