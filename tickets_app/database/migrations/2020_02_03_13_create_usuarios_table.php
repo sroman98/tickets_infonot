@@ -21,9 +21,9 @@ class CreateUsuariosTable extends Migration
             $table->string('apellidos', 50);
             $table->char('telefono', 10);
             $table->binary('foto')->nullable();
-            $table->bigInteger('idNotaria')->nullable();
-            $table->bigInteger('idDepartamento')->nullable();
-            $table->bigInteger('idRol')->nullable();
+            $table->unsignedBigInteger('idNotaria')->nullable();
+            $table->unsignedBigInteger('idDepartamento')->nullable();
+            $table->unsignedBigInteger('idRol')->nullable();
             $table->timestamps();
             $table->rememberToken();
 

@@ -17,8 +17,8 @@ class CreateNotariasTable extends Migration
             $table->bigIncrements('id');
             $table->smallInteger('numero');
             $table->char('telefono', 10);
-            $table->bigInteger('idMunicipio');
-            $table->bigInteger('idDireccion');
+            $table->unsignedBigInteger('idMunicipio');
+            $table->unsignedBigInteger('idDireccion');
             $table->timestamps();
 
             $table->foreign('idMunicipio')->references('id')->on('municipios');
