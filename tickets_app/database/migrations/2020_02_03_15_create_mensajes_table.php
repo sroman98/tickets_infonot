@@ -18,7 +18,7 @@ class CreateMensajesTable extends Migration
             $table->longText('descripcion')->nullable();
             $table->binary('archivo')->nullable();
             $table->unsignedBigInteger('idTicket');
-            $table->unsignedBigInteger('idUsuario');
+            $table->unsignedBigInteger('idUsuario')->nullable();
             $table->timestamps();
 
             $table->foreign('idTicket')->references('id')->on('tickets');
