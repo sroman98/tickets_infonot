@@ -20,7 +20,7 @@ class CreateTicketsTable extends Migration
             $table->unsignedBigInteger('idUsAsignado')->nullable();
             $table->unsignedBigInteger('idEstatus');
             $table->unsignedBigInteger('idDepartamento');
-            $table->unsignedBigInteger('idNotaria')->nullable();
+            $table->unsignedBigInteger('idNotaria');
             $table->string('nombre',100)->nullable();
             $table->string('correo', 50)->nullable();
             $table->char('telefono', 10)->nullable();
