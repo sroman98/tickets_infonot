@@ -19,7 +19,7 @@ class CreateDireccionsTable extends Migration
             $table->smallInteger('numExt');
             $table->smallInteger('numInt')->nullable();
             $table->string('colonia', 50);
-            $table->smallInteger('cp');
+            $table->integer('cp');
             $table->unsignedBigInteger('idEstado');
             $table->unsignedBigInteger('idMunicipio');
 

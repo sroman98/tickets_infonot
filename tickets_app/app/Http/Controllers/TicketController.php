@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mensaje;
 use App\Ticket;
 use Illuminate\Http\Request;
+use function foo\func;
 
 class TicketController extends Controller
 {
@@ -39,25 +41,39 @@ class TicketController extends Controller
 
         if (empty($request->asunto) || empty($request->idDepartamento) || empty($request->idNotaria)) {
             return response()->json(['error' => 'Por favor llena todos los campos'],400);
-        } else {
-            $ticket->asunto = $request->asunto;
-            $ticket->idUsAsignado = null;
-            $ticket->idEstatus = 0; // id de estatus 'pendiente'
-            $ticket->idDepartamento = $request->idDepartamento;
-            $ticket->idNotaria = $request->idNotaria;
-            if (empty($request->idUsuario)) {
-                if (empty($request->nombre) || empty($request->telefono) || empty($request->correo)) {
-                    return response()->json(['error' => 'Por favor llena todos los campos'],400);
-                } else {
-                    $ticket->nombre = $request->nombre;
-                    $ticket->telefono = $request->telefono;
-                    $ticket->correo = $request->correo;
-                }
-            } else {
-                $ticket->idUsuario = $request->idUsuario;
-            }
         }
-        $ticket->save();
+        if (empty($request->descripcion) && empty($request->archivo)) {
+            return response()->json(['error' => 'El mensaje debe tener descripcion o un archivo'],400);
+        }
+
+        $ticket->asunto = $request->asunto;
+        $ticket->idUsAsignado = null;
+        $ticket->idEstatus = 1; // id de estatus 'pendiente'
+        $ticket->idDepartamento = $request->idDepartamento;
+        $ticket->idNotaria = $request->idNotaria;
+        if (empty($request->idUsuario)) {
+            if (empty($request->nombre) || empty($request->telefono) || empty($request->correo)) {
+                return response()->json(['error' => 'Por favor llena todos los campos'],400);
+            } else {
+                $ticket->nombre = $request->nombre;
+                $ticket->telefono = $request->telefono;
+                $ticket->correo = $request->correo;
+            }
+        } else {
+            $ticket->idUsuario = $request->idUsuario;
+        }
+        if ($ticket->save()) {
+            $mensaje = new Mensaje;
+            $mensaje->descripcion = $request->descripcion;
+            $mensaje->archivo = $request->archivo;
+            $mensaje->idTicket = $ticket->id;
+            $mensaje->idUsuario = $request->idUsuario;
+
+            if ($mensaje->save()) {
+                return response()->json(['msg' => 'Lo logramos compas'],200);
+            }
+            $ticket->delete();
+        }
     }
 
     /**
