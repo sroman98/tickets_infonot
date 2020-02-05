@@ -70,7 +70,7 @@ class TicketController extends Controller
             $mensaje->idUsuario = $request->idUsuario;
 
             if ($mensaje->save()) {
-                return response()->json(['msg' => 'Lo logramos compas'],200);
+                return response()->json(['ticket' => $ticket, 'mensaje' => $mensaje],200);
             }
             $ticket->delete();
         }
