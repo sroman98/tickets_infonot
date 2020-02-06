@@ -10,8 +10,11 @@ import SwiftUI
 
 struct CreateTicketView: View {
     private var notarias = [Notaria]()
+    private var usuarios = [Usuario]()
+    private var departamentos = [Departamento]()
     
     @State private var name: String = "";
+    @State private var not: String = "";
     @State private var email: String = "";
     @State private var phone: String = "";
     @State private var subject: String = "";
@@ -20,17 +23,24 @@ struct CreateTicketView: View {
     var body: some View {
         NavigationView {
             Form {
-                Picker(selection: .constant(0), label: Text("Notaría")) {
+                Picker(selection: .constant(1), label: Text("Notaría")) {
                     Text("Not 1 Qro").tag(1)
                     Text("Not 2 Qro").tag(2)
                 }
+                Section {
+                    Picker(selection: .constant(1), label: Text("Usuario")) {
+                        Text("Usuario 1").tag(1)
+                        Text("Usuario 2").tag(2)
+                    }
 
-                TextField("Nombre", text: $name)
-                TextField("Correo", text: $email)
-                TextField("Teléfono", text: $phone)
+                    TextField("Nombre", text: $name)
+                    TextField("Correo", text: $email)
+                    TextField("Teléfono", text: $phone)
+                }
+                
                 TextField("Asunto", text: $subject)
                 
-                Picker(selection: .constant(0), label: Text("Departamento")) {
+                Picker(selection: .constant(1), label: Text("Departamento")) {
                     Text("Soporte técnico").tag(1)
                     Text("Ventas").tag(2)
                 }
