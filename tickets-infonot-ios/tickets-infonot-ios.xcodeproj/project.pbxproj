@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B54109B23EBC93B000167CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B54109A23EBC93B000167CC /* AppDelegate.swift */; };
+		7B54109D23EBC93B000167CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B54109C23EBC93B000167CC /* SceneDelegate.swift */; };
+		7B54109F23EBC93B000167CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B54109E23EBC93B000167CC /* ContentView.swift */; };
+		7B5410A123EBC93F000167CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B5410A023EBC93F000167CC /* Assets.xcassets */; };
+		7B5410A423EBC93F000167CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B5410A323EBC93F000167CC /* Preview Assets.xcassets */; };
+		7B5410A723EBC93F000167CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5410A523EBC93F000167CC /* LaunchScreen.storyboard */; };
+		7B5410B223EBC93F000167CC /* tickets_infonot_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5410B123EBC93F000167CC /* tickets_infonot_iosTests.swift */; };
+		7B5410BD23EBC93F000167CC /* tickets_infonot_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5410BC23EBC93F000167CC /* tickets_infonot_iosUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B5410AE23EBC93F000167CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B54108F23EBC93B000167CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B54109623EBC93B000167CC;
+			remoteInfo = "tickets-infonot-ios";
+		};
+		7B5410B923EBC93F000167CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B54108F23EBC93B000167CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B54109623EBC93B000167CC;
+			remoteInfo = "tickets-infonot-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7B54109723EBC93B000167CC /* tickets-infonot-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tickets-infonot-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B54109A23EBC93B000167CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7B54109C23EBC93B000167CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7B54109E23EBC93B000167CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7B5410A023EBC93F000167CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B5410A323EBC93F000167CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7B5410A623EBC93F000167CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B5410A823EBC93F000167CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B5410AD23EBC93F000167CC /* tickets-infonot-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tickets-infonot-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B5410B123EBC93F000167CC /* tickets_infonot_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tickets_infonot_iosTests.swift; sourceTree = "<group>"; };
+		7B5410B323EBC93F000167CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B5410B823EBC93F000167CC /* tickets-infonot-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tickets-infonot-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B5410BC23EBC93F000167CC /* tickets_infonot_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tickets_infonot_iosUITests.swift; sourceTree = "<group>"; };
+		7B5410BE23EBC93F000167CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B54109423EBC93B000167CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B5410AA23EBC93F000167CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B5410B523EBC93F000167CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B54108E23EBC93B000167CC = {
+			isa = PBXGroup;
+			children = (
+				7B54109923EBC93B000167CC /* tickets-infonot-ios */,
+				7B5410B023EBC93F000167CC /* tickets-infonot-iosTests */,
+				7B5410BB23EBC93F000167CC /* tickets-infonot-iosUITests */,
+				7B54109823EBC93B000167CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B54109823EBC93B000167CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B54109723EBC93B000167CC /* tickets-infonot-ios.app */,
+				7B5410AD23EBC93F000167CC /* tickets-infonot-iosTests.xctest */,
+				7B5410B823EBC93F000167CC /* tickets-infonot-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B54109923EBC93B000167CC /* tickets-infonot-ios */ = {
+			isa = PBXGroup;
+			children = (
+				7B54109A23EBC93B000167CC /* AppDelegate.swift */,
+				7B54109C23EBC93B000167CC /* SceneDelegate.swift */,
+				7B54109E23EBC93B000167CC /* ContentView.swift */,
+				7B5410A023EBC93F000167CC /* Assets.xcassets */,
+				7B5410A523EBC93F000167CC /* LaunchScreen.storyboard */,
+				7B5410A823EBC93F000167CC /* Info.plist */,
+				7B5410A223EBC93F000167CC /* Preview Content */,
+			);
+			path = "tickets-infonot-ios";
+			sourceTree = "<group>";
+		};
+		7B5410A223EBC93F000167CC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7B5410A323EBC93F000167CC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7B5410B023EBC93F000167CC /* tickets-infonot-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B5410B123EBC93F000167CC /* tickets_infonot_iosTests.swift */,
+				7B5410B323EBC93F000167CC /* Info.plist */,
+			);
+			path = "tickets-infonot-iosTests";
+			sourceTree = "<group>";
+		};
+		7B5410BB23EBC93F000167CC /* tickets-infonot-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7B5410BC23EBC93F000167CC /* tickets_infonot_iosUITests.swift */,
+				7B5410BE23EBC93F000167CC /* Info.plist */,
+			);
+			path = "tickets-infonot-iosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B54109623EBC93B000167CC /* tickets-infonot-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B5410C123EBC93F000167CC /* Build configuration list for PBXNativeTarget "tickets-infonot-ios" */;
+			buildPhases = (
+				7B54109323EBC93B000167CC /* Sources */,
+				7B54109423EBC93B000167CC /* Frameworks */,
+				7B54109523EBC93B000167CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tickets-infonot-ios";
+			productName = "tickets-infonot-ios";
+			productReference = 7B54109723EBC93B000167CC /* tickets-infonot-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7B5410AC23EBC93F000167CC /* tickets-infonot-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B5410C423EBC93F000167CC /* Build configuration list for PBXNativeTarget "tickets-infonot-iosTests" */;
+			buildPhases = (
+				7B5410A923EBC93F000167CC /* Sources */,
+				7B5410AA23EBC93F000167CC /* Frameworks */,
+				7B5410AB23EBC93F000167CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B5410AF23EBC93F000167CC /* PBXTargetDependency */,
+			);
+			name = "tickets-infonot-iosTests";
+			productName = "tickets-infonot-iosTests";
+			productReference = 7B5410AD23EBC93F000167CC /* tickets-infonot-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7B5410B723EBC93F000167CC /* tickets-infonot-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B5410C723EBC93F000167CC /* Build configuration list for PBXNativeTarget "tickets-infonot-iosUITests" */;
+			buildPhases = (
+				7B5410B423EBC93F000167CC /* Sources */,
+				7B5410B523EBC93F000167CC /* Frameworks */,
+				7B5410B623EBC93F000167CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B5410BA23EBC93F000167CC /* PBXTargetDependency */,
+			);
+			name = "tickets-infonot-iosUITests";
+			productName = "tickets-infonot-iosUITests";
+			productReference = 7B5410B823EBC93F000167CC /* tickets-infonot-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B54108F23EBC93B000167CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = sroman;
+				TargetAttributes = {
+					7B54109623EBC93B000167CC = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					7B5410AC23EBC93F000167CC = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 7B54109623EBC93B000167CC;
+					};
+					7B5410B723EBC93F000167CC = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 7B54109623EBC93B000167CC;
+					};
+				};
+			};
+			buildConfigurationList = 7B54109223EBC93B000167CC /* Build configuration list for PBXProject "tickets-infonot-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B54108E23EBC93B000167CC;
+			productRefGroup = 7B54109823EBC93B000167CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B54109623EBC93B000167CC /* tickets-infonot-ios */,
+				7B5410AC23EBC93F000167CC /* tickets-infonot-iosTests */,
+				7B5410B723EBC93F000167CC /* tickets-infonot-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B54109523EBC93B000167CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B5410A723EBC93F000167CC /* LaunchScreen.storyboard in Resources */,
+				7B5410A423EBC93F000167CC /* Preview Assets.xcassets in Resources */,
+				7B5410A123EBC93F000167CC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B5410AB23EBC93F000167CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B5410B623EBC93F000167CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B54109323EBC93B000167CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B54109B23EBC93B000167CC /* AppDelegate.swift in Sources */,
+				7B54109D23EBC93B000167CC /* SceneDelegate.swift in Sources */,
+				7B54109F23EBC93B000167CC /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B5410A923EBC93F000167CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B5410B223EBC93F000167CC /* tickets_infonot_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B5410B423EBC93F000167CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B5410BD23EBC93F000167CC /* tickets_infonot_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B5410AF23EBC93F000167CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B54109623EBC93B000167CC /* tickets-infonot-ios */;
+			targetProxy = 7B5410AE23EBC93F000167CC /* PBXContainerItemProxy */;
+		};
+		7B5410BA23EBC93F000167CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B54109623EBC93B000167CC /* tickets-infonot-ios */;
+			targetProxy = 7B5410B923EBC93F000167CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7B5410A523EBC93F000167CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B5410A623EBC93F000167CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B5410BF23EBC93F000167CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7B5410C023EBC93F000167CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B5410C223EBC93F000167CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"tickets-infonot-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = 6DS64ZKFJ4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "tickets-infonot-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sroman.tickets-infonot-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B5410C323EBC93F000167CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"tickets-infonot-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = 6DS64ZKFJ4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "tickets-infonot-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sroman.tickets-infonot-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7B5410C523EBC93F000167CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DS64ZKFJ4;
+				INFOPLIST_FILE = "tickets-infonot-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sroman.tickets-infonot-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tickets-infonot-ios.app/tickets-infonot-ios";
+			};
+			name = Debug;
+		};
+		7B5410C623EBC93F000167CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DS64ZKFJ4;
+				INFOPLIST_FILE = "tickets-infonot-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sroman.tickets-infonot-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tickets-infonot-ios.app/tickets-infonot-ios";
+			};
+			name = Release;
+		};
+		7B5410C823EBC93F000167CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DS64ZKFJ4;
+				INFOPLIST_FILE = "tickets-infonot-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sroman.tickets-infonot-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "tickets-infonot-ios";
+			};
+			name = Debug;
+		};
+		7B5410C923EBC93F000167CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DS64ZKFJ4;
+				INFOPLIST_FILE = "tickets-infonot-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sroman.tickets-infonot-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "tickets-infonot-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B54109223EBC93B000167CC /* Build configuration list for PBXProject "tickets-infonot-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B5410BF23EBC93F000167CC /* Debug */,
+				7B5410C023EBC93F000167CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B5410C123EBC93F000167CC /* Build configuration list for PBXNativeTarget "tickets-infonot-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B5410C223EBC93F000167CC /* Debug */,
+				7B5410C323EBC93F000167CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B5410C423EBC93F000167CC /* Build configuration list for PBXNativeTarget "tickets-infonot-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B5410C523EBC93F000167CC /* Debug */,
+				7B5410C623EBC93F000167CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B5410C723EBC93F000167CC /* Build configuration list for PBXNativeTarget "tickets-infonot-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B5410C823EBC93F000167CC /* Debug */,
+				7B5410C923EBC93F000167CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B54108F23EBC93B000167CC /* Project object */;
+}
