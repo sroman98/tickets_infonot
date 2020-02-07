@@ -10,7 +10,7 @@ import Foundation
 import SwiftUI
 import Combine
 
-class Departamento: ObservableObject {
+class Departamento: Identifiable {
     var id: Int = 0
     var nombre: String = ""
 }

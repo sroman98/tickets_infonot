@@ -10,7 +10,7 @@ import Foundation
 import SwiftUI
 import Combine
 
-class Usuario: ObservableObject {
+class Usuario: Identifiable {
     var id: Int = 0
     var correo: String = ""
     var nombre: String = ""

@@ -1,0 +1,6 @@
+framework module Pods_tickets_infonot_ios_tickets_infonot_iosUITests {
+  umbrella header "Pods-tickets-infonot-ios-tickets-infonot-iosUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

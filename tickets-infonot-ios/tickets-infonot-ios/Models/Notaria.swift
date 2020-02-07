@@ -10,8 +10,8 @@ import Foundation
 import SwiftUI
 import Combine
 
-class Notaria: ObservableObject {
-    var id: Int = 0
+class Notaria: Identifiable {
+    let id: Int = 0
     var numero: Int = 0
     var telefono: String = ""
     var idMunicipio: Int = 0

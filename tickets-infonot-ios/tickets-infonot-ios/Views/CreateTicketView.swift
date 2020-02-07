@@ -9,50 +9,44 @@
 import SwiftUI
 
 struct CreateTicketView: View {
-    private var notarias = [Notaria]()
-    private var usuarios = [Usuario]()
-    private var departamentos = [Departamento]()
+    @ObservedObject private var vm = CreateTicketVM()
     
-    @State private var name: String = "";
-    @State private var not: String = "";
-    @State private var email: String = "";
-    @State private var phone: String = "";
-    @State private var subject: String = "";
-    @State private var description: String = "";
+    
     
     var body: some View {
         NavigationView {
             Form {
-                Picker(selection: .constant(1), label: Text("Notaría")) {
-                    Text("Not 1 Qro").tag(1)
-                    Text("Not 2 Qro").tag(2)
-                }
-                Section {
-                    Picker(selection: .constant(1), label: Text("Usuario")) {
-                        Text("Usuario 1").tag(1)
-                        Text("Usuario 2").tag(2)
+                Picker(selection: $vm.notIndex, label: Text("Notaría")) {
+                    ForEach(vm.notarias) { notaria in
+                        Text("\(notaria.numero)").tag(notaria.id)
                     }
-
-                    TextField("Nombre", text: $name)
-                    TextField("Correo", text: $email)
-                    TextField("Teléfono", text: $phone)
                 }
                 
-                TextField("Asunto", text: $subject)
-                
-                Picker(selection: .constant(1), label: Text("Departamento")) {
-                    Text("Soporte técnico").tag(1)
-                    Text("Ventas").tag(2)
+                Section {
+                    Picker(selection: $vm.usIndex, label: Text("Usuario")) {
+                        ForEach(vm.usuarios) { usuario in
+                            Text("\(usuario.nombre) \(usuario.apellidos)").tag(usuario.id)
+                        }
+                    }
+                    TextField("Nombre", text: $vm.name)
+                    TextField("Correo", text: $vm.email)
+                    TextField("Teléfono", text: $vm.phone)
                 }
                 
-                TextField("Descripción", text: $description)
-                
-                Button(action: {print("tapped button")}) {
-                    Text("Subir archivo")
+                Section {
+                    Picker(selection: $vm.dptoIndex, label: Text("Departamento")) {
+                        ForEach(vm.departamentos) { departamento in
+                            Text("\(departamento.nombre)").tag(departamento.id)
+                        }
+                    }
+                    TextField("Asunto", text: $vm.subject)
+                    TextField("Descripción", text: $vm.description)
+                    Button(action: {print("tapped button")}) {
+                        Text("Subir archivo")
+                    }
                 }
             }
             .navigationBarTitle(Text("Nuevo Ticket"))
-            
         }
     }
 }

@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_tickets_infonot_ios_tickets_infonot_iosUITests : NSObject
+@end
+@implementation PodsDummy_Pods_tickets_infonot_ios_tickets_infonot_iosUITests
+@end

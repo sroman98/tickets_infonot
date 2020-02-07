@@ -1,0 +1,6 @@
+framework module Pods_tickets_infonot_ios {
+  umbrella header "Pods-tickets-infonot-ios-umbrella.h"
+
+  export *
+  module * { export * }
+}
