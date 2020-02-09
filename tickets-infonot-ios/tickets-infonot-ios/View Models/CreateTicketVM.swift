@@ -11,11 +11,11 @@ import SwiftUI
 import Combine
 
 class CreateTicketVM: ObservableObject {
-    var notarias = [Notaria]()
+    @Published var notarias = [Notaria]()
     var usuarios = [Usuario]()
-    var departamentos = [Departamento]()
+    var dptos = [Departamento]()
     
-    var notIndex = 0
+    var notIndex: Int = 0
     var usIndex = 0
     var dptoIndex = 0
     
@@ -25,6 +25,12 @@ class CreateTicketVM: ObservableObject {
     var subject: String = ""
     var description: String = ""
     var file: String = ""
+    
+    init() {
+        Catalogs.shared.getNotarias { notArray in
+            self.notarias = notArray
+        }
+    }
     
     private func isValidForm() -> String {
         if subject.isEmpty {

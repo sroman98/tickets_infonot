@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Estado: Identifiable {
+class Estado: Identifiable, Codable {
     var id: Int = 0
     var nombre: String = ""
 }

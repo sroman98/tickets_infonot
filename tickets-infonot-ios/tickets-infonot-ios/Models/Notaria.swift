@@ -10,13 +10,11 @@ import Foundation
 import SwiftUI
 import Combine
 
-class Notaria: Identifiable {
-    let id: Int = 0
-    var numero: Int = 0
-    var telefono: String = ""
-    var municipio: String = ""
-    var direccion: String = ""
-    var notario: String = ""
-    var created_at: Date = Date()
-    var updated_at: Date = Date()
+struct Notaria: Identifiable, Codable {
+    var id: Int
+    var numero: Int
+    var telefono: String
+    var notario: String
+    var municipio: Municipio
+    var direccion: Direccion
 }

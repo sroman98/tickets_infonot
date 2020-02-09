@@ -25,7 +25,6 @@ class Direccion extends JsonResource
             'numInt' => $this->numInt,
             'colonia' => $this->colonia,
             'cp' => $this->cp,
-            'estado' => $municipio['estado'],
             'municipio' => $municipio,
         ];
     }

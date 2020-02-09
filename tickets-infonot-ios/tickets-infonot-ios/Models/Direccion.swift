@@ -8,13 +8,12 @@
 
 import Foundation
 
-class Direccion: Identifiable {
+class Direccion: Identifiable, Codable {
     var id: Int = 0
     var calle: String = ""
     var numExt: Int = 0
-    var numInt: Int = 0
+    var numInt: Int?
     var colonia: String = ""
     var cp: Int = 0
-    var estado: String = ""
-    var municipio: String = ""
+    var municipio: Municipio = Municipio()
 }

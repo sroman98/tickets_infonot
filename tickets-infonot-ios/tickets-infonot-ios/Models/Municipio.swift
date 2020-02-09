@@ -8,8 +8,8 @@
 
 import Foundation
 
-class Municipio: Identifiable {
+class Municipio: Identifiable, Codable {
     var id: Int = 0
     var nombre: String = ""
-    var estado: String = ""
+    var estado: Estado = Estado()
 }

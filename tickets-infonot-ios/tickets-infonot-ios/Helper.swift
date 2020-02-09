@@ -11,7 +11,7 @@ import Alamofire
 
 
 class Helper {
-    static func sendRequest(path: String, method: HTTPMethod, parameters: [String:Any], completion: @escaping (AFDataResponse<Data?>) -> Void) {
+    static func sendRequest(path: String, method: HTTPMethod, parameters: [String:Any]?, completion: @escaping (AFDataResponse<Data?>) -> Void) {
         let headers = HTTPHeaders.init(["Content-Type" : "application/x-www-form-urlencoded"])
 
         AF.request(API_HOST+path, method: method, parameters: parameters, encoding: URLEncoding.httpBody, headers: headers).response { response in
@@ -29,9 +29,5 @@ class Helper {
         let phoneTest = NSPredicate(format: "SELF MATCHES %@", PHONE_REGEX)
         let result =  phoneTest.evaluate(with: phone)
         return result
-    }
-    
-    static func updateCatalogs() {
-        
     }
 }

@@ -71,7 +71,7 @@
 		7BF80F8023EF233B00627878 /* Municipio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Municipio.swift; sourceTree = "<group>"; };
 		7BF80F8223EF234F00627878 /* Direccion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direccion.swift; sourceTree = "<group>"; };
 		7BF80F8423EFA74400627878 /* Estado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estado.swift; sourceTree = "<group>"; };
-		7BFB9E5523EBDB25002BBF02 /* CreateTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTicketView.swift; sourceTree = "<group>"; };
+		7BFB9E5523EBDB25002BBF02 /* CreateTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTicketView.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BFB9E5723EBDBB0002BBF02 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		7BFB9E5923EBDE14002BBF02 /* Departamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Departamento.swift; sourceTree = "<group>"; };
 		7BFB9E5B23EDDB8E002BBF02 /* CreateTicketVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTicketVM.swift; sourceTree = "<group>"; };

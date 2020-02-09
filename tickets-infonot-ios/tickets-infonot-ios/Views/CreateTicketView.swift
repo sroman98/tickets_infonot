@@ -11,14 +11,12 @@ import SwiftUI
 struct CreateTicketView: View {
     @ObservedObject private var vm = CreateTicketVM()
     
-    
-    
     var body: some View {
         NavigationView {
             Form {
                 Picker(selection: $vm.notIndex, label: Text("Notaría")) {
                     ForEach(vm.notarias) { notaria in
-                        Text("\(notaria.numero)").tag(notaria.id)
+                        Text("\(notaria.numero) \(notaria.municipio.nombre)")
                     }
                 }
                 
@@ -35,7 +33,7 @@ struct CreateTicketView: View {
                 
                 Section {
                     Picker(selection: $vm.dptoIndex, label: Text("Departamento")) {
-                        ForEach(vm.departamentos) { departamento in
+                        ForEach(vm.dptos) { departamento in
                             Text("\(departamento.nombre)").tag(departamento.id)
                         }
                     }
@@ -54,7 +52,7 @@ struct CreateTicketView: View {
                     Text("Enviar")
                 }
             )
-        }
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
