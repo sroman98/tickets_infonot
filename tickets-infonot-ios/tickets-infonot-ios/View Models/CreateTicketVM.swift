@@ -6,7 +6,7 @@
 //  Copyright © 2020 sroman. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import SwiftUI
 import Combine
 
@@ -24,42 +24,38 @@ class CreateTicketVM: ObservableObject {
     var phone: String = ""
     var subject: String = ""
     var description: String = ""
+    var file: String = ""
     
-    func createTicket() {
-        
+    private func isValidForm() -> String {
+        if subject.isEmpty {
+            return "Por favor llena todos los campos"
+        }
+        if dptoIndex == 0 || notIndex == 0 {
+            return "Por favor selecciona una notaría y un departamento"
+        }
+        if file.isEmpty && description.isEmpty {
+            return "Por favor agrega una descripción o sube un archivo"
+        }
+        if notIndex == 0 {
+            if name.isEmpty || phone.isEmpty || email.isEmpty {
+                return "Por favor ingresa tus datos de contacto"
+            }
+            if !(Helper.isValidEmail(email: email) || Helper.isValidPhone(phone: phone)) {
+                return "Por favor ingresa un teléfono o email válido"
+            }
+        }
+        return ""
     }
     
-    func sendRequest() {
-        let headers = [
-            "Content-Type" : "application/x-www-form-urlencoded"
-        ]
-        let params = [
-            "username":email,
-            "first_name":name,
-            "last_name":lname,
-            "email":email,
-            "password":password
-        ] as [String:Any]
-        Alamofire.request(API_HOST+"/users/", method:.post, parameters:params, encoding: URLEncoding.httpBody, headers: headers).responseData
-        { response in switch response.result {
-            case .success(let data):
-                switch response.response?.statusCode ?? -1 {
-                    case 200:
-                        stop = false
-                        self.didSignedUser(userData: data)
-                    case 400:
-                        Helper.showAlert(viewController: self, title: "¡Ups!", message: "Por favor llena todos los campos")
-                    case 401:
-                        Helper.showAlert(viewController: self, title: "¡Ups!", message: "Ya existe una cuenta con el correo que ingresaste")
-                    default:
-                        Helper.showAlert(viewController: self, title: "¡Ups!", message: "Error inesperado")
-                }
-            case .failure(let error):
-                Helper.showAlert(viewController: self,title: "¡Ups!",message: error.localizedDescription)
+    func createTicket() {
+        let error = isValidForm()
+        if  error == "" {
+            let parameters: [String: Any] = ["asunto": subject, "descripcion": description, "idDepartamento": dptoIndex, "idNotaria": notIndex, "idUsuario": usIndex, "nombre": name, "telefono": phone, "correo": email]
+            Helper.sendRequest(path: "/tickets", method: .post, parameters: parameters) { response in
+                print(response)
             }
-            if self.actInd != nil && stop {
-                Helper.stopActivityIndicator(actInd: self.actInd!)
-            }
+        } else {
+            print(error)
         }
     }
 }

@@ -42,11 +42,18 @@ struct CreateTicketView: View {
                     TextField("Asunto", text: $vm.subject)
                     TextField("Descripción", text: $vm.description)
                     Button(action: {print("tapped button")}) {
-                        Text("Subir archivo")
+                        Text("Adjuntar archivo")
                     }
                 }
             }
             .navigationBarTitle(Text("Nuevo Ticket"))
+            .navigationBarItems(trailing:
+                Button(action: {
+                    self.vm.createTicket()
+                }) {
+                    Text("Enviar")
+                }
+            )
         }
     }
 }
