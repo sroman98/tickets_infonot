@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\Estados;
 use Illuminate\Http\Request;
 
-use App\Notaria;
-use App\Http\Resources\Notaria as NotariaResource;
-use App\Municipio;
+use App\Http\Resources\Estado as EstadoResource;
+use App\Estado;
 
-class NotariaController extends Controller
+class EstadoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,9 +17,7 @@ class NotariaController extends Controller
      */
     public function index()
     {
-        return NotariaResource::collection(Notaria::all()->sortBy('numero')->sortBy(function ($notaria) {
-            return Municipio::find($notaria->idMunicipio)->nombre;
-        }));
+        return EstadoResource::collection(Estado::all()->sortBy('nombre'));
     }
 
     /**
@@ -51,7 +49,7 @@ class NotariaController extends Controller
      */
     public function show($id)
     {
-        return new NotariaResource(Notaria::find($id));
+        //
     }
 
     /**

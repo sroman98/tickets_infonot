@@ -13,3 +13,12 @@ class Municipio: Identifiable, Codable {
     var nombre: String = ""
     var estado: Estado = Estado()
 }
+
+extension Municipio: Equatable {
+    static func == (lhs: Municipio, rhs: Municipio) -> Bool {
+        return
+            lhs.id == rhs.id &&
+            lhs.nombre == rhs.nombre &&
+            lhs.estado == rhs.estado
+    }
+}

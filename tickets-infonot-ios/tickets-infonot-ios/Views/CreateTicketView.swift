@@ -11,14 +11,36 @@ import SwiftUI
 struct CreateTicketView: View {
     @ObservedObject private var vm = CreateTicketVM()
     
+    @State var idx = 0
+    let array = ["hola", "jola 2", "hola3"]
+    
     var body: some View {
         NavigationView {
             Form {
-                Picker(selection: $vm.notIndex, label: Text("Notaría")) {
-                    ForEach(vm.notarias) { notaria in
-                        Text("\(notaria.numero) \(notaria.municipio.nombre)")
+                List {
+                    NavigationLink(destination: municipiosListView()) {
+                        Text("Notaria")
                     }
+                    
                 }
+//                Section {
+////                    VStack {
+//
+////                    }
+//                    Picker(selection: $vm.notIndex, label: Text("Notaría")) {
+////                        ForEach(vm.notarias) { notaria in
+//                            List {
+//                               ForEach(vm.notarias) { notaria in
+//                                Text("\(notaria.numero) \(notaria.municipio.nombre)")
+//                                }
+//                            }
+////                        }
+////                        ForEach(vm.notarias) { notaria in
+////                            Text("\(notaria.numero) \(notaria.municipio.nombre)")
+////                        }
+//                    }
+//                }
+                
                 
                 Section {
                     Picker(selection: $vm.usIndex, label: Text("Usuario")) {

@@ -16,10 +16,8 @@ class Catalogs: ObservableObject {
     private var notarias = [Notaria]()
     private var usuarios = [Usuario]()
     private var departamentos = [Departamento]()
-    
-    func update(catalog: String, array: [Any]) {
-        
-    }
+    private var municipios = [Municipio]()
+    private var estados = [Estado]()
     
     func getNotarias(completion: @escaping ([Notaria]) -> Void) {
         if notarias.isEmpty {
@@ -41,6 +39,52 @@ class Catalogs: ObservableObject {
             }
         } else {
             completion(self.notarias)
+        }
+    }
+    
+    func getMunicipios(completion: @escaping ([Municipio]) -> Void) {
+        if municipios.isEmpty {
+            Helper.sendRequest(path: "/municipios", method: .get, parameters: nil) { response in
+                switch response.result {
+                case .success(let data):
+                    if data != nil {
+                        guard let munDictionary = try? DECODER.decode([String: [Municipio]].self, from: data!) else {
+                            print("Error: Couldn't decode data into dictionary of array of municipios")
+                            completion(self.municipios)
+                            return
+                        }
+                        self.municipios = munDictionary["data"] ?? [Municipio]()
+                    }
+                case .failure(let error):
+                    print(error)
+                }
+                completion(self.municipios)
+            }
+        } else {
+            completion(self.municipios)
+        }
+    }
+    
+    func getEstados(completion: @escaping ([Estado]) -> Void) {
+        if estados.isEmpty {
+            Helper.sendRequest(path: "/estados", method: .get, parameters: nil) { response in
+                switch response.result {
+                case .success(let data):
+                    if data != nil {
+                        guard let edoDictionary = try? DECODER.decode([String: [Estado]].self, from: data!) else {
+                            print("Error: Couldn't decode data into dictionary of array of estados")
+                            completion(self.estados)
+                            return
+                        }
+                        self.estados = edoDictionary["data"] ?? self.estados
+                    }
+                case .failure(let error):
+                    print(error)
+                }
+                completion(self.estados)
+            }
+        } else {
+            completion(self.estados)
         }
     }
 }

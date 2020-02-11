@@ -20,10 +20,8 @@ class CreateDireccionsTable extends Migration
             $table->smallInteger('numInt')->nullable();
             $table->string('colonia', 50);
             $table->integer('cp');
-            $table->unsignedBigInteger('idEstado');
             $table->unsignedBigInteger('idMunicipio');
 
-            $table->foreign('idEstado')->references('id')->on('estados');
             $table->foreign('idMunicipio')->references('id')->on('municipios');
         });
     }
