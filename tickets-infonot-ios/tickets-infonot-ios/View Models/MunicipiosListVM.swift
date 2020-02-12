@@ -29,22 +29,28 @@ class MunicipiosListVM: ObservableObject {
                 self.estados = edoArray
                 Catalogs.shared.getNotarias { notArray in
                 self.notarias = notArray
-                    for estado in self.estados {
-                        self.filteredMuns = self.municipios.filter({ mun -> Bool in
-                            mun.estado == estado
-                        })
-                        self.edoMunsDict[estado] = self.filteredMuns
-                        
-                        for municipio in self.filteredMuns {
-                            self.filteredNots = self.notarias.filter({ not -> Bool in
-                                not.municipio == municipio
-                            })
-                            self.munNotsDict[municipio] = self.filteredNots
-                        }
-                    }
+                    self.setEdoMunsDict()
                 }
             }
         }
-        
+    }
+    
+    func setEdoMunsDict() {
+        for estado in self.estados {
+            self.filteredMuns = self.municipios.filter({ mun -> Bool in
+                mun.estado == estado
+            })
+            self.edoMunsDict[estado] = self.filteredMuns
+            setMunNotsDict()
+        }
+    }
+    
+    func setMunNotsDict() {
+        for municipio in self.filteredMuns {
+            self.filteredNots = self.notarias.filter({ not -> Bool in
+                not.municipio == municipio
+            })
+            self.munNotsDict[municipio] = self.filteredNots
+        }
     }
 }
