@@ -22,3 +22,9 @@ extension Municipio: Equatable {
             lhs.estado == rhs.estado
     }
 }
+
+extension Municipio: Hashable {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+}

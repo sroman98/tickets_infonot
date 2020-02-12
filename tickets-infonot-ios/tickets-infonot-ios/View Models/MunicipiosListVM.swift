@@ -13,24 +13,36 @@ import Combine
 class MunicipiosListVM: ObservableObject {
     var municipios = [Municipio]()
     var estados = [Estado]()
+    var notarias = [Notaria]()
     var filteredMuns = [Municipio]()
+    var filteredNots = [Notaria]()
     
-    @Published var edoMunDict = [Estado: [Municipio]]()
+    @Published var edoMunsDict = [Estado: [Municipio]]()
+    @Published var munNotsDict = [Municipio: [Notaria]]()
     
-    var municipioIndex: Int = 0
+    var notIndex = 0
     
     init() {
         Catalogs.shared.getMunicipios { munArray in
             self.municipios = munArray
             Catalogs.shared.getEstados { edoArray in
                 self.estados = edoArray
-                for estado in self.estados {
-                    self.filteredMuns = self.municipios.filter({ mun -> Bool in
-                        mun.estado == estado
-                    })
-                    self.edoMunDict[estado] = self.filteredMuns
+                Catalogs.shared.getNotarias { notArray in
+                self.notarias = notArray
+                    for estado in self.estados {
+                        self.filteredMuns = self.municipios.filter({ mun -> Bool in
+                            mun.estado == estado
+                        })
+                        self.edoMunsDict[estado] = self.filteredMuns
+                        
+                        for municipio in self.filteredMuns {
+                            self.filteredNots = self.notarias.filter({ not -> Bool in
+                                not.municipio == municipio
+                            })
+                            self.munNotsDict[municipio] = self.filteredNots
+                        }
+                    }
                 }
-                 
             }
         }
         

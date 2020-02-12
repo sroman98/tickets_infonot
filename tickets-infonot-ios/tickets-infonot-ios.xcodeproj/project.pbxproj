@@ -20,7 +20,6 @@
 		7B5410B223EBC93F000167CC /* tickets_infonot_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5410B123EBC93F000167CC /* tickets_infonot_iosTests.swift */; };
 		7B5410BD23EBC93F000167CC /* tickets_infonot_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5410BC23EBC93F000167CC /* tickets_infonot_iosUITests.swift */; };
 		7B5410D223EBD62E000167CC /* Notaria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5410D123EBD62E000167CC /* Notaria.swift */; };
-		7BB08D0023F25B3400799868 /* NotariasListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB08CFF23F25B3400799868 /* NotariasListView.swift */; };
 		7BF80F7F23EDFE2300627878 /* Catalogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF80F7E23EDFE2300627878 /* Catalogs.swift */; };
 		7BF80F8123EF233B00627878 /* Municipio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF80F8023EF233B00627878 /* Municipio.swift */; };
 		7BF80F8323EF234F00627878 /* Direccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF80F8223EF234F00627878 /* Direccion.swift */; };
@@ -72,7 +71,6 @@
 		7B5410BC23EBC93F000167CC /* tickets_infonot_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tickets_infonot_iosUITests.swift; sourceTree = "<group>"; };
 		7B5410BE23EBC93F000167CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B5410D123EBD62E000167CC /* Notaria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notaria.swift; sourceTree = "<group>"; };
-		7BB08CFF23F25B3400799868 /* NotariasListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotariasListView.swift; sourceTree = "<group>"; };
 		7BF80F7E23EDFE2300627878 /* Catalogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catalogs.swift; sourceTree = "<group>"; };
 		7BF80F8023EF233B00627878 /* Municipio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Municipio.swift; sourceTree = "<group>"; };
 		7BF80F8223EF234F00627878 /* Direccion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direccion.swift; sourceTree = "<group>"; };
@@ -235,7 +233,6 @@
 			isa = PBXGroup;
 			children = (
 				7B42794223F0940700380B25 /* MunicipiosListView.swift */,
-				7BB08CFF23F25B3400799868 /* NotariasListView.swift */,
 			);
 			path = "Notaria Selector";
 			sourceTree = "<group>";
@@ -497,7 +494,6 @@
 				7BFB9E5A23EBDE14002BBF02 /* Departamento.swift in Sources */,
 				7BFB9E5C23EDDB8E002BBF02 /* CreateTicketVM.swift in Sources */,
 				7BFB9E5823EBDBB0002BBF02 /* Usuario.swift in Sources */,
-				7BB08D0023F25B3400799868 /* NotariasListView.swift in Sources */,
 				7BFB9E6023EDE099002BBF02 /* Constants.swift in Sources */,
 				7BFB9E5E23EDE012002BBF02 /* Helper.swift in Sources */,
 				7BF80F8123EF233B00627878 /* Municipio.swift in Sources */,
