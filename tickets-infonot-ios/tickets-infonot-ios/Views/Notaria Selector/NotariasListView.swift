@@ -9,9 +9,12 @@
 import SwiftUI
 
 struct NotariasListView: View {
+    let municipio: Municipio
+    
     var body: some View {
         
         List {
+            Text(municipio.nombre)
             Text("1")
             Text("2")
             Text("3")
@@ -24,6 +27,6 @@ struct NotariasListView: View {
 
 struct NotariasListView_Previews: PreviewProvider {
     static var previews: some View {
-        NotariasListView()
+        NotariasListView(municipio: Municipio())
     }
 }

@@ -20,7 +20,7 @@ struct municipiosListView: View {
             ForEach(mlvm.estados) { estado in
                 Section(header: Text(estado.nombre)) {
                     ForEach(self.mlvm.edoMunDict[estado]!) { municipio in
-                        NavigationLink(destination: NotariasListView()) {
+                        NavigationLink(destination: NotariasListView(municipio: municipio)) {
                             Text(municipio.nombre)
                         }
                     }
