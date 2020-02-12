@@ -11,9 +11,6 @@ import SwiftUI
 struct CreateTicketView: View {
     @ObservedObject private var vm = CreateTicketVM()
     
-    @State var idx = 0
-    let array = ["hola", "jola 2", "hola3"]
-    
     var body: some View {
         NavigationView {
             Form {
