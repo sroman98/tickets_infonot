@@ -18,7 +18,7 @@ struct CreateTicketView: View {
         NavigationView {
             Form {
                 List {
-                    NavigationLink(destination: municipiosListView()) {
+                    NavigationLink(destination: NotariasListView()) {
                         Text("Notaria")
                     }
                     

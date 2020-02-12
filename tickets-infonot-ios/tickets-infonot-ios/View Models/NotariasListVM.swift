@@ -10,7 +10,7 @@ import UIKit
 import SwiftUI
 import Combine
 
-class MunicipiosListVM: ObservableObject {
+class NotariasListVM: ObservableObject {
     var municipios = [Municipio]()
     var estados = [Estado]()
     var notarias = [Notaria]()

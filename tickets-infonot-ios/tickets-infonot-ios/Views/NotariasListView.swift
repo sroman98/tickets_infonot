@@ -1,5 +1,5 @@
 //
-//  MunicipiosListView.swift
+//  NotariasListView.swift
 //  tickets-infonot-ios
 //
 //  Created by Sandra Roman on 09/02/20.
@@ -9,16 +9,17 @@
 import Foundation
 import SwiftUI
 
-struct municipiosListView: View {
-    @ObservedObject var mlvm = MunicipiosListVM()
+struct NotariasListView: View {
+    @ObservedObject var nlvm = NotariasListVM()
     
     var body: some View {
+        
         Form {
-            ForEach(mlvm.estados) { estado in
+            ForEach(nlvm.estados) { estado in
                 Section(header: Text(estado.nombre)) {
-                    ForEach(self.mlvm.edoMunsDict[estado]!) { municipio in
-                        Picker(selection: self.$mlvm.notIndex, label: Text(municipio.nombre)) {
-                            ForEach(self.mlvm.munNotsDict[municipio]!) { notaria in
+                    ForEach(self.nlvm.edoMunsDict[estado]!) { municipio in
+                        Picker(selection: self.$nlvm.notIndex, label: Text(municipio.nombre)) {
+                            ForEach(self.nlvm.munNotsDict[municipio]!) { notaria in
                                 Text("\(notaria.numero)")
                             }
                             .navigationBarTitle(municipio.nombre)
@@ -28,5 +29,6 @@ struct municipiosListView: View {
                 }
             }
         }.navigationBarTitle("Municipio")
+        
     }
 }

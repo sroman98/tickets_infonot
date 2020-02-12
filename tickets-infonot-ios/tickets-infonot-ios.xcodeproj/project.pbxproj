@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		0A7B0E3E31967A3382453A05 /* Pods_tickets_infonot_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98182D0310393578B9FE041 /* Pods_tickets_infonot_iosTests.framework */; };
 		4140247BF0666C4B8140F9B7 /* Pods_tickets_infonot_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7417EC4BD5CE68FD2174E32 /* Pods_tickets_infonot_ios.framework */; };
-		7B42794323F0940700380B25 /* MunicipiosListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B42794223F0940700380B25 /* MunicipiosListView.swift */; };
-		7B42794523F095B600380B25 /* MunicipiosListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B42794423F095B600380B25 /* MunicipiosListVM.swift */; };
+		7B42794323F0940700380B25 /* NotariasListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B42794223F0940700380B25 /* NotariasListView.swift */; };
+		7B42794523F095B600380B25 /* NotariasListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B42794423F095B600380B25 /* NotariasListVM.swift */; };
 		7B54109B23EBC93B000167CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B54109A23EBC93B000167CC /* AppDelegate.swift */; };
 		7B54109D23EBC93B000167CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B54109C23EBC93B000167CC /* SceneDelegate.swift */; };
 		7B54109F23EBC93B000167CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B54109E23EBC93B000167CC /* ContentView.swift */; };
@@ -54,8 +54,8 @@
 		1C6F4D44A4A6E3A43E01E4EF /* Pods-tickets-infonot-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tickets-infonot-iosTests.release.xcconfig"; path = "Target Support Files/Pods-tickets-infonot-iosTests/Pods-tickets-infonot-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		51D62CF4D60AEDA05A92AA86 /* Pods-tickets-infonot-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tickets-infonot-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-tickets-infonot-iosTests/Pods-tickets-infonot-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		677CFAEDA20E487E5B0ABFEF /* Pods-tickets-infonot-ios-tickets-infonot-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tickets-infonot-ios-tickets-infonot-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-tickets-infonot-ios-tickets-infonot-iosUITests/Pods-tickets-infonot-ios-tickets-infonot-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		7B42794223F0940700380B25 /* MunicipiosListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MunicipiosListView.swift; sourceTree = "<group>"; };
-		7B42794423F095B600380B25 /* MunicipiosListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MunicipiosListVM.swift; sourceTree = "<group>"; };
+		7B42794223F0940700380B25 /* NotariasListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotariasListView.swift; sourceTree = "<group>"; };
+		7B42794423F095B600380B25 /* NotariasListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotariasListVM.swift; sourceTree = "<group>"; };
 		7B54109723EBC93B000167CC /* tickets-infonot-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tickets-infonot-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B54109A23EBC93B000167CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B54109C23EBC93B000167CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -202,7 +202,7 @@
 			children = (
 				7B54109E23EBC93B000167CC /* ContentView.swift */,
 				7BFB9E5523EBDB25002BBF02 /* CreateTicketView.swift */,
-				7BB08D0123F25B3E00799868 /* Notaria Selector */,
+				7B42794223F0940700380B25 /* NotariasListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,17 +224,9 @@
 			isa = PBXGroup;
 			children = (
 				7BFB9E5B23EDDB8E002BBF02 /* CreateTicketVM.swift */,
-				7B42794423F095B600380B25 /* MunicipiosListVM.swift */,
+				7B42794423F095B600380B25 /* NotariasListVM.swift */,
 			);
 			path = "View Models";
-			sourceTree = "<group>";
-		};
-		7BB08D0123F25B3E00799868 /* Notaria Selector */ = {
-			isa = PBXGroup;
-			children = (
-				7B42794223F0940700380B25 /* MunicipiosListView.swift */,
-			);
-			path = "Notaria Selector";
 			sourceTree = "<group>";
 		};
 		F72D33D7A56E5862D5C4A65F /* Frameworks */ = {
@@ -486,9 +478,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B42794523F095B600380B25 /* MunicipiosListVM.swift in Sources */,
+				7B42794523F095B600380B25 /* NotariasListVM.swift in Sources */,
 				7B54109B23EBC93B000167CC /* AppDelegate.swift in Sources */,
-				7B42794323F0940700380B25 /* MunicipiosListView.swift in Sources */,
+				7B42794323F0940700380B25 /* NotariasListView.swift in Sources */,
 				7B54109D23EBC93B000167CC /* SceneDelegate.swift in Sources */,
 				7BF80F8323EF234F00627878 /* Direccion.swift in Sources */,
 				7BFB9E5A23EBDE14002BBF02 /* Departamento.swift in Sources */,
