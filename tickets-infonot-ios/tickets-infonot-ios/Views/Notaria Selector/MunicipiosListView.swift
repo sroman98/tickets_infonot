@@ -11,23 +11,24 @@ import SwiftUI
 
 struct municipiosListView: View {
     @ObservedObject var mlvm = MunicipiosListVM()
-    @State private var filteredMuns = [Municipio]()
-    var estado = Estado()
+    var notarias = [Notaria]()
+    @State var notIndex = 0
     
     var body: some View {
-        
-        List {
+        Form {
             ForEach(mlvm.estados) { estado in
                 Section(header: Text(estado.nombre)) {
                     ForEach(self.mlvm.edoMunDict[estado]!) { municipio in
-                        NavigationLink(destination: NotariasListView(municipio: municipio)) {
-                            Text(municipio.nombre)
+                        Picker(selection: self.$notIndex, label: Text(municipio.nombre)) {
+                            ForEach(self.notarias) { notaria in
+                                if notaria.municipio == municipio {
+                                    Text("\(notaria.numero)")
+                                }
+                            }
                         }
                     }
                 }
             }
-        }
-        .navigationBarTitle(Text("Municipio"))
-        
+        }.navigationBarTitle("Municipio")
     }
 }
