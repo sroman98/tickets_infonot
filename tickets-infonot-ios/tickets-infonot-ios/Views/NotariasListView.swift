@@ -27,8 +27,8 @@ struct NotariasListView: View {
                         
                     }
                 }
-            }
-        }.navigationBarTitle("Municipio")
+            }.navigationBarTitle("Municipio")
+        }
         
     }
 }
