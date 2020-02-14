@@ -16,7 +16,7 @@ class CreateTicketVM: ObservableObject {
     var dptos = [Departamento]()
     
     var municipioIndex: Int = 0
-    var notIndex: Int = 0
+    @Published var notIndex: Int = 0
     var usIndex = 0
     var dptoIndex = 0
     

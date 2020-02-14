@@ -20,8 +20,6 @@ class NotariasListVM: ObservableObject {
     @Published var edoMunsDict = [Estado: [Municipio]]()
     @Published var munNotsDict = [Municipio: [Notaria]]()
     
-    var notIndex = 0
-    
     init() {
         Catalogs.shared.getMunicipios { munArray in
             self.municipios = munArray

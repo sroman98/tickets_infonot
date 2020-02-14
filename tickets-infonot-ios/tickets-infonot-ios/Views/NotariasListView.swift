@@ -10,6 +10,7 @@ import Foundation
 import SwiftUI
 
 struct NotariasListView: View {
+    @EnvironmentObject var ctvm: CreateTicketVM
     @ObservedObject var nlvm = NotariasListVM()
     
     var body: some View {
@@ -18,7 +19,7 @@ struct NotariasListView: View {
             ForEach(nlvm.estados) { estado in
                 Section(header: Text(estado.nombre)) {
                     ForEach(self.nlvm.edoMunsDict[estado]!) { municipio in
-                        Picker(selection: self.$nlvm.notIndex, label: Text(municipio.nombre)) {
+                        Picker(selection: self.$ctvm.notIndex, label: Text(municipio.nombre)) {
                             ForEach(self.nlvm.munNotsDict[municipio]!) { notaria in
                                 Text("\(notaria.numero)")
                             }

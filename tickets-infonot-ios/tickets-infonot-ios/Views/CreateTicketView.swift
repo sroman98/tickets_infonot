@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct CreateTicketView: View {
-    @ObservedObject private var vm = CreateTicketVM()
+    @EnvironmentObject var vm: CreateTicketVM
     
     var body: some View {
         NavigationView {
@@ -60,5 +60,6 @@ struct CreateTicketView: View {
 struct CreateTicketView_Previews: PreviewProvider {
     static var previews: some View {
         CreateTicketView()
+            .environmentObject(CreateTicketVM())
     }
 }
