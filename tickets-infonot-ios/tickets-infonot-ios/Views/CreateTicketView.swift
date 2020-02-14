@@ -61,7 +61,7 @@ struct CreateTicketView: View {
                     Text("Enviar")
                 }
             )
-        }.navigationViewStyle(StackNavigationViewStyle())
+        }
     }
 }
 
