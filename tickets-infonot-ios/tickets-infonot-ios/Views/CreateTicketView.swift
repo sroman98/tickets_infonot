@@ -18,7 +18,6 @@ struct CreateTicketView: View {
                     NavigationLink(destination: NotariasListView()) {
                         Text("Notaria")
                     }
-                    
                 }
                 
                 Section {
