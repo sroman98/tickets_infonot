@@ -16,7 +16,16 @@ struct CreateTicketView: View {
             Form {
                 List {
                     NavigationLink(destination: NotariasListView()) {
-                        Text("Notaria")
+                        HStack {
+                            Text("Notaria")
+                            Spacer()
+                            if vm.notIndex != 0 {
+                                Text("\(vm.notaria.municipio.nombre) \(vm.notaria.numero)")
+                                .foregroundColor(Color.gray)
+                            }
+                            
+                        }
+                        
                     }
                 }
                 

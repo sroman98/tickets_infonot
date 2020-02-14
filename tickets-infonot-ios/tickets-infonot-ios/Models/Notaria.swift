@@ -18,3 +18,20 @@ struct Notaria: Identifiable, Codable {
     var municipio: Municipio
     var direccion: Direccion
 }
+
+extension Notaria: Equatable {
+    static func == (lhs: Notaria, rhs: Notaria) -> Bool {
+        return
+            lhs.id == rhs.id &&
+            lhs.numero == rhs.numero &&
+            lhs.telefono == rhs.telefono &&
+            lhs.notario == rhs.notario &&
+            lhs.municipio == rhs.municipio
+    }
+}
+
+extension Notaria: Hashable {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+}
