@@ -10,15 +10,15 @@ import UIKit
 import SwiftUI
 import Combine
 
-class NotariasListVM: ObservableObject {
+class NotariasListVM {
     var municipios = [Municipio]()
     var estados = [Estado]()
     var notarias = [Notaria]()
     var filteredMuns = [Municipio]()
     var filteredNots = [Notaria]()
     
-    @Published var edoMunsDict = [Estado: [Municipio]]()
-    @Published var munNotsDict = [Municipio: [Notaria]]()
+    var edoMunsDict = [Estado: [Municipio]]()
+    var munNotsDict = [Municipio: [Notaria]]()
     
     init() {
         Catalogs.shared.getMunicipios { munArray in

@@ -11,7 +11,7 @@ import SwiftUI
 
 struct NotariasListView: View {
     @EnvironmentObject var ctvm: CreateTicketVM
-    @ObservedObject var nlvm = NotariasListVM()
+    var nlvm = NotariasListVM()
     
     var body: some View {
         
