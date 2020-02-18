@@ -22,3 +22,5 @@ Route::resource('notarias', 'NotariaController');
 Route::resource('municipios', 'MunicipioController');
 Route::resource('estados', 'EstadoController');
 Route::resource('usuarios', 'UsuarioController');
+Route::resource('rol', 'RolController');
+Route::resource('departamento', 'DepartamentoController');

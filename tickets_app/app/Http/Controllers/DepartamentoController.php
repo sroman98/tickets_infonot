@@ -3,10 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Resources\Usuario as UsuarioResource;
-use App\Usuario;
 
-class UsuarioController extends Controller
+class DepartamentoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +13,7 @@ class UsuarioController extends Controller
      */
     public function index()
     {
-        return UsuarioResource::collection(Usuario::all()->sortBy('nombre')->sortBy('apellidos')->sortBy('idNotaria'));
+        //
     }
 
     /**
