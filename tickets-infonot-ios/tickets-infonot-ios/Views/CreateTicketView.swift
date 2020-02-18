@@ -25,7 +25,6 @@ struct CreateTicketView: View {
                             }
                             
                         }
-                        
                     }
                 }
                 
@@ -35,9 +34,15 @@ struct CreateTicketView: View {
                             Text("\(usuario.nombre) \(usuario.apellidos)").tag(usuario.id)
                         }
                     }
-                    TextField("Nombre", text: $vm.name)
-                    TextField("Correo", text: $vm.email)
-                    TextField("Teléfono", text: $vm.phone)
+                    if vm.usIndex == 0 {
+                        TextField("Nombre", text: $vm.name)
+                        TextField("Correo", text: $vm.email)
+                        TextField("Teléfono", text: $vm.phone)
+                    } else {
+                        Button(action: {self.vm.usIndex = 0}) {
+                            Text("No tengo usuario")
+                        }
+                    }
                 }
                 
                 Section {
@@ -53,7 +58,7 @@ struct CreateTicketView: View {
                     }
                 }
             }
-            .navigationBarTitle(Text("Nuevo Ticket"))
+            .navigationBarTitle("Nuevo Ticket")
             .navigationBarItems(trailing:
                 Button(action: {
                     self.vm.createTicket()
