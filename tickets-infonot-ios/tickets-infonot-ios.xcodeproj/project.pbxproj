@@ -13,7 +13,6 @@
 		7B42794523F095B600380B25 /* NotariasListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B42794423F095B600380B25 /* NotariasListVM.swift */; };
 		7B54109B23EBC93B000167CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B54109A23EBC93B000167CC /* AppDelegate.swift */; };
 		7B54109D23EBC93B000167CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B54109C23EBC93B000167CC /* SceneDelegate.swift */; };
-		7B54109F23EBC93B000167CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B54109E23EBC93B000167CC /* ContentView.swift */; };
 		7B5410A123EBC93F000167CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B5410A023EBC93F000167CC /* Assets.xcassets */; };
 		7B5410A423EBC93F000167CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B5410A323EBC93F000167CC /* Preview Assets.xcassets */; };
 		7B5410A723EBC93F000167CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5410A523EBC93F000167CC /* LaunchScreen.storyboard */; };
@@ -59,7 +58,6 @@
 		7B54109723EBC93B000167CC /* tickets-infonot-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tickets-infonot-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B54109A23EBC93B000167CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B54109C23EBC93B000167CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7B54109E23EBC93B000167CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7B5410A023EBC93F000167CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B5410A323EBC93F000167CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7B5410A623EBC93F000167CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -200,7 +198,6 @@
 		7B5410CA23EBD46A000167CC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				7B54109E23EBC93B000167CC /* ContentView.swift */,
 				7BFB9E5523EBDB25002BBF02 /* CreateTicketView.swift */,
 				7B42794223F0940700380B25 /* NotariasListView.swift */,
 			);
@@ -493,7 +490,6 @@
 				7B5410D223EBD62E000167CC /* Notaria.swift in Sources */,
 				7BFB9E5623EBDB25002BBF02 /* CreateTicketView.swift in Sources */,
 				7BF80F7F23EDFE2300627878 /* Catalogs.swift in Sources */,
-				7B54109F23EBC93B000167CC /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
