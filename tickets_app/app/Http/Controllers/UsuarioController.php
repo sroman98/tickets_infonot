@@ -15,7 +15,11 @@ class UsuarioController extends Controller
      */
     public function index()
     {
-        return UsuarioResource::collection(Usuario::all()->sortBy('nombre')->sortBy('apellidos')->sortBy('idNotaria'));
+        return UsuarioResource::collection(Usuario::all()
+            ->sortBy('nombre')
+            ->sortBy('apellidos')
+            ->sortBy('idNotaria')
+        );
     }
 
     /**
@@ -49,6 +53,16 @@ class UsuarioController extends Controller
     {
         return new UsuarioResource(Usuario::find($id));
     }
+
+    public function getNotariaUsers($id)
+    {
+        return UsuarioResource::collection(Usuario::all()
+            ->where('idNotaria', $id)
+            ->sortBy('nombre')
+            ->sortBy('apellidos')
+        );
+    }
+
 
     /**
      * Show the form for editing the specified resource.

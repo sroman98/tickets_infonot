@@ -24,3 +24,5 @@ Route::resource('estados', 'EstadoController');
 Route::resource('usuarios', 'UsuarioController');
 Route::resource('rol', 'RolController');
 Route::resource('departamento', 'DepartamentoController');
+
+Route::get('/usuarios/notaria/{id}', 'UsuarioController@getNotariaUsers');
