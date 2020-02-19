@@ -19,17 +19,17 @@ class CreateTicketVM: ObservableObject {
         }!
     }
     
-    var usIndex = 0
+    @Published var usIndex = 0
     var usuarios = [Usuario]()
-    var name: String = ""
-    var email: String = ""
-    var phone: String = ""
+    @Published var name: String = ""
+    @Published var email: String = ""
+    @Published var phone: String = ""
     
-    var dptoIndex = 0
+    @Published var dptoIndex = 0
     var dptos = [Departamento]()
-    var subject: String = ""
-    var description: String = ""
-    var file: String = ""
+    @Published var subject: String = ""
+    @Published var description: String = ""
+    @Published var file: String = ""
     
     init() {
         Catalogs.shared.getNotarias { notarias in

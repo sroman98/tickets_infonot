@@ -28,35 +28,40 @@ struct CreateTicketView: View {
                     }
                 }
                 
-                Section {
-                    Picker(selection: $vm.usIndex, label: Text("Usuario")) {
-                        ForEach(vm.usuarios) { usuario in
-                            Text("\(usuario.nombre) \(usuario.apellidos)").tag(usuario.id)
+                if vm.notIndex != 0 {
+                    Section {
+                        Picker(selection: $vm.usIndex, label: Text("Usuario")) {
+                            ForEach(vm.usuarios) { usuario in
+                                Text("\(usuario.nombre) \(usuario.apellidos)").tag(usuario.id)
+                            }
                         }
-                    }
-                    if vm.usIndex == 0 {
-                        TextField("Nombre", text: $vm.name)
-                        TextField("Correo", text: $vm.email)
-                        TextField("Teléfono", text: $vm.phone)
-                    } else {
-                        Button(action: {self.vm.usIndex = 0}) {
-                            Text("No tengo usuario")
+                        if vm.usIndex == 0 {
+                            TextField("Nombre", text: $vm.name)
+                            TextField("Correo", text: $vm.email)
+                            TextField("Teléfono", text: $vm.phone)
+                        } else {
+                            Button(action: {self.vm.usIndex = 0}) {
+                                Text("No tengo usuario")
+                            }
                         }
                     }
                 }
                 
-                Section {
-                    Picker(selection: $vm.dptoIndex, label: Text("Departamento")) {
-                        ForEach(vm.dptos) { departamento in
-                            Text("\(departamento.nombre)").tag(departamento.id)
+                if vm.usIndex != 0 || !(vm.name.isEmpty || vm.email.isEmpty || vm.phone.isEmpty) {
+                    Section {
+                        Picker(selection: $vm.dptoIndex, label: Text("Departamento")) {
+                            ForEach(vm.dptos) { departamento in
+                                Text("\(departamento.nombre)").tag(departamento.id)
+                            }
+                        }
+                        TextField("Asunto", text: $vm.subject)
+                        TextField("Descripción", text: $vm.description)
+                        Button(action: {print("tapped button")}) {
+                            Text("Adjuntar archivo")
                         }
                     }
-                    TextField("Asunto", text: $vm.subject)
-                    TextField("Descripción", text: $vm.description)
-                    Button(action: {print("tapped button")}) {
-                        Text("Adjuntar archivo")
-                    }
                 }
+                
             }
             .navigationBarTitle("Nuevo Ticket")
             .navigationBarItems(trailing:
@@ -64,7 +69,7 @@ struct CreateTicketView: View {
                     self.vm.createTicket()
                 }) {
                     Text("Enviar")
-                }
+                }.disabled(vm.subject.isEmpty || vm.description.isEmpty || vm.dptoIndex == 0)
             )
         }
     }
