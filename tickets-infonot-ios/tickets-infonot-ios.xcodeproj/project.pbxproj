@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		0A7B0E3E31967A3382453A05 /* Pods_tickets_infonot_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98182D0310393578B9FE041 /* Pods_tickets_infonot_iosTests.framework */; };
 		4140247BF0666C4B8140F9B7 /* Pods_tickets_infonot_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7417EC4BD5CE68FD2174E32 /* Pods_tickets_infonot_ios.framework */; };
-		7B42794323F0940700380B25 /* NotariasListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B42794223F0940700380B25 /* NotariasListView.swift */; };
-		7B42794523F095B600380B25 /* NotariasListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B42794423F095B600380B25 /* NotariasListVM.swift */; };
 		7B54109B23EBC93B000167CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B54109A23EBC93B000167CC /* AppDelegate.swift */; };
 		7B54109D23EBC93B000167CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B54109C23EBC93B000167CC /* SceneDelegate.swift */; };
 		7B5410A123EBC93F000167CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B5410A023EBC93F000167CC /* Assets.xcassets */; };
@@ -18,16 +16,12 @@
 		7B5410A723EBC93F000167CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5410A523EBC93F000167CC /* LaunchScreen.storyboard */; };
 		7B5410B223EBC93F000167CC /* tickets_infonot_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5410B123EBC93F000167CC /* tickets_infonot_iosTests.swift */; };
 		7B5410BD23EBC93F000167CC /* tickets_infonot_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5410BC23EBC93F000167CC /* tickets_infonot_iosUITests.swift */; };
-		7B5410D223EBD62E000167CC /* Notaria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5410D123EBD62E000167CC /* Notaria.swift */; };
-		7BF80F7F23EDFE2300627878 /* Catalogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF80F7E23EDFE2300627878 /* Catalogs.swift */; };
-		7BF80F8123EF233B00627878 /* Municipio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF80F8023EF233B00627878 /* Municipio.swift */; };
-		7BF80F8323EF234F00627878 /* Direccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF80F8223EF234F00627878 /* Direccion.swift */; };
-		7BF80F8523EFA74400627878 /* Estado.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF80F8423EFA74400627878 /* Estado.swift */; };
+		7B638D08240F17AF00052C0A /* Subtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B638D07240F17AF00052C0A /* Subtitle.swift */; };
+		7B638D0A240F287500052C0A /* TextFieldWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B638D09240F287500052C0A /* TextFieldWithTitle.swift */; };
+		7B638D0D24104BE100052C0A /* ButtonWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B638D0C24104BE100052C0A /* ButtonWithTitle.swift */; };
+		7BF7D4252414226F00050C4D /* MultilineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF7D4242414226F00050C4D /* MultilineTextField.swift */; };
+		7BF7D42924142D9E00050C4D /* MultilineTFWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF7D42824142D9E00050C4D /* MultilineTFWithTitle.swift */; };
 		7BFB9E5623EBDB25002BBF02 /* CreateTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFB9E5523EBDB25002BBF02 /* CreateTicketView.swift */; };
-		7BFB9E5823EBDBB0002BBF02 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFB9E5723EBDBB0002BBF02 /* Usuario.swift */; };
-		7BFB9E5A23EBDE14002BBF02 /* Departamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFB9E5923EBDE14002BBF02 /* Departamento.swift */; };
-		7BFB9E5C23EDDB8E002BBF02 /* CreateTicketVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFB9E5B23EDDB8E002BBF02 /* CreateTicketVM.swift */; };
-		7BFB9E5E23EDE012002BBF02 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFB9E5D23EDE012002BBF02 /* Helper.swift */; };
 		7BFB9E6023EDE099002BBF02 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFB9E5F23EDE099002BBF02 /* Constants.swift */; };
 		8092C4AA142690B82E6668F7 /* Pods_tickets_infonot_ios_tickets_infonot_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E805E6E574A6CA38A6E79552 /* Pods_tickets_infonot_ios_tickets_infonot_iosUITests.framework */; };
 /* End PBXBuildFile section */
@@ -53,8 +47,6 @@
 		1C6F4D44A4A6E3A43E01E4EF /* Pods-tickets-infonot-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tickets-infonot-iosTests.release.xcconfig"; path = "Target Support Files/Pods-tickets-infonot-iosTests/Pods-tickets-infonot-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		51D62CF4D60AEDA05A92AA86 /* Pods-tickets-infonot-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tickets-infonot-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-tickets-infonot-iosTests/Pods-tickets-infonot-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		677CFAEDA20E487E5B0ABFEF /* Pods-tickets-infonot-ios-tickets-infonot-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tickets-infonot-ios-tickets-infonot-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-tickets-infonot-ios-tickets-infonot-iosUITests/Pods-tickets-infonot-ios-tickets-infonot-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		7B42794223F0940700380B25 /* NotariasListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotariasListView.swift; sourceTree = "<group>"; };
-		7B42794423F095B600380B25 /* NotariasListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotariasListVM.swift; sourceTree = "<group>"; };
 		7B54109723EBC93B000167CC /* tickets-infonot-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tickets-infonot-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B54109A23EBC93B000167CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B54109C23EBC93B000167CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,16 +60,12 @@
 		7B5410B823EBC93F000167CC /* tickets-infonot-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tickets-infonot-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5410BC23EBC93F000167CC /* tickets_infonot_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tickets_infonot_iosUITests.swift; sourceTree = "<group>"; };
 		7B5410BE23EBC93F000167CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B5410D123EBD62E000167CC /* Notaria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notaria.swift; sourceTree = "<group>"; };
-		7BF80F7E23EDFE2300627878 /* Catalogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catalogs.swift; sourceTree = "<group>"; };
-		7BF80F8023EF233B00627878 /* Municipio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Municipio.swift; sourceTree = "<group>"; };
-		7BF80F8223EF234F00627878 /* Direccion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direccion.swift; sourceTree = "<group>"; };
-		7BF80F8423EFA74400627878 /* Estado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estado.swift; sourceTree = "<group>"; };
+		7B638D07240F17AF00052C0A /* Subtitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subtitle.swift; sourceTree = "<group>"; };
+		7B638D09240F287500052C0A /* TextFieldWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithTitle.swift; sourceTree = "<group>"; };
+		7B638D0C24104BE100052C0A /* ButtonWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithTitle.swift; sourceTree = "<group>"; };
+		7BF7D4242414226F00050C4D /* MultilineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextField.swift; sourceTree = "<group>"; };
+		7BF7D42824142D9E00050C4D /* MultilineTFWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTFWithTitle.swift; sourceTree = "<group>"; };
 		7BFB9E5523EBDB25002BBF02 /* CreateTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTicketView.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		7BFB9E5723EBDBB0002BBF02 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
-		7BFB9E5923EBDE14002BBF02 /* Departamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Departamento.swift; sourceTree = "<group>"; };
-		7BFB9E5B23EDDB8E002BBF02 /* CreateTicketVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTicketVM.swift; sourceTree = "<group>"; };
-		7BFB9E5D23EDE012002BBF02 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		7BFB9E5F23EDE099002BBF02 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A3FDDEC10BBD49827D3C7203 /* Pods-tickets-infonot-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tickets-infonot-ios.release.xcconfig"; path = "Target Support Files/Pods-tickets-infonot-ios/Pods-tickets-infonot-ios.release.xcconfig"; sourceTree = "<group>"; };
 		A4DE6A42BDA8D30A52B0D351 /* Pods-tickets-infonot-ios-tickets-infonot-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tickets-infonot-ios-tickets-infonot-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-tickets-infonot-ios-tickets-infonot-iosUITests/Pods-tickets-infonot-ios-tickets-infonot-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -158,9 +146,7 @@
 				7B5410CA23EBD46A000167CC /* Views */,
 				7B54109A23EBC93B000167CC /* AppDelegate.swift */,
 				7B54109C23EBC93B000167CC /* SceneDelegate.swift */,
-				7BF80F7E23EDFE2300627878 /* Catalogs.swift */,
 				7BFB9E5F23EDE099002BBF02 /* Constants.swift */,
-				7BFB9E5D23EDE012002BBF02 /* Helper.swift */,
 				7B5410A023EBC93F000167CC /* Assets.xcassets */,
 				7B5410A523EBC93F000167CC /* LaunchScreen.storyboard */,
 				7B5410A823EBC93F000167CC /* Info.plist */,
@@ -198,8 +184,9 @@
 		7B5410CA23EBD46A000167CC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7B638D0B24104B9100052C0A /* Components */,
+				7B638D06240F179C00052C0A /* Styles */,
 				7BFB9E5523EBDB25002BBF02 /* CreateTicketView.swift */,
-				7B42794223F0940700380B25 /* NotariasListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,12 +194,6 @@
 		7B5410CB23EBD48F000167CC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7B5410D123EBD62E000167CC /* Notaria.swift */,
-				7BFB9E5723EBDBB0002BBF02 /* Usuario.swift */,
-				7BFB9E5923EBDE14002BBF02 /* Departamento.swift */,
-				7BF80F8023EF233B00627878 /* Municipio.swift */,
-				7BF80F8223EF234F00627878 /* Direccion.swift */,
-				7BF80F8423EFA74400627878 /* Estado.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -220,10 +201,27 @@
 		7B5410CC23EBD494000167CC /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				7BFB9E5B23EDDB8E002BBF02 /* CreateTicketVM.swift */,
-				7B42794423F095B600380B25 /* NotariasListVM.swift */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		7B638D06240F179C00052C0A /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				7B638D07240F17AF00052C0A /* Subtitle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		7B638D0B24104B9100052C0A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7B638D09240F287500052C0A /* TextFieldWithTitle.swift */,
+				7B638D0C24104BE100052C0A /* ButtonWithTitle.swift */,
+				7BF7D4242414226F00050C4D /* MultilineTextField.swift */,
+				7BF7D42824142D9E00050C4D /* MultilineTFWithTitle.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		F72D33D7A56E5862D5C4A65F /* Frameworks */ = {
@@ -475,21 +473,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B42794523F095B600380B25 /* NotariasListVM.swift in Sources */,
 				7B54109B23EBC93B000167CC /* AppDelegate.swift in Sources */,
-				7B42794323F0940700380B25 /* NotariasListView.swift in Sources */,
+				7B638D0D24104BE100052C0A /* ButtonWithTitle.swift in Sources */,
 				7B54109D23EBC93B000167CC /* SceneDelegate.swift in Sources */,
-				7BF80F8323EF234F00627878 /* Direccion.swift in Sources */,
-				7BFB9E5A23EBDE14002BBF02 /* Departamento.swift in Sources */,
-				7BFB9E5C23EDDB8E002BBF02 /* CreateTicketVM.swift in Sources */,
-				7BFB9E5823EBDBB0002BBF02 /* Usuario.swift in Sources */,
 				7BFB9E6023EDE099002BBF02 /* Constants.swift in Sources */,
-				7BFB9E5E23EDE012002BBF02 /* Helper.swift in Sources */,
-				7BF80F8123EF233B00627878 /* Municipio.swift in Sources */,
-				7BF80F8523EFA74400627878 /* Estado.swift in Sources */,
-				7B5410D223EBD62E000167CC /* Notaria.swift in Sources */,
+				7B638D0A240F287500052C0A /* TextFieldWithTitle.swift in Sources */,
 				7BFB9E5623EBDB25002BBF02 /* CreateTicketView.swift in Sources */,
-				7BF80F7F23EDFE2300627878 /* Catalogs.swift in Sources */,
+				7BF7D42924142D9E00050C4D /* MultilineTFWithTitle.swift in Sources */,
+				7B638D08240F17AF00052C0A /* Subtitle.swift in Sources */,
+				7BF7D4252414226F00050C4D /* MultilineTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
