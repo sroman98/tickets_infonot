@@ -8,8 +8,12 @@
 
 import SwiftUI
 
+typealias VoidHandler = ()  -> Void
+
 struct ButtonWithTitle: View {
-    var title: String
+    let title: String
+    let action: VoidHandler
+    
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -17,15 +21,8 @@ struct ButtonWithTitle: View {
                 .fontWeight(.thin)
                 .padding(.bottom, 4)
             Button("Seleccionar") {
-                
+                self.action()
             }
         }
-    }
-}
-
-struct ButtonWithTitle_Previews: PreviewProvider {
-    static var previews: some View {
-        ButtonWithTitle(title: "Título")
-        .previewLayout(.sizeThatFits)
     }
 }
