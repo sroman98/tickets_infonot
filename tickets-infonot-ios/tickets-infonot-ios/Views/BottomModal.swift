@@ -10,36 +10,14 @@ import SwiftUI
 
 struct BottomModal: View {
     @Binding var show: Bool
+    @Binding var notaria: Notaria
     
     var body: some View {
         VStack {
-            VStack {
-                HStack {
-                    Text("Estado")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-                    Spacer()
-                    Button("Cancelar") {
-                        self.show.toggle()
-                    }
-                        .padding(4)
-                        .background(Color.white)
-                        .cornerRadius(10)
-                        .shadow(radius: 10)
-                }
-                .padding()
-                
-              Text("This is the text content on the bottom card.")
-                .foregroundColor(Color.white)
-                .frame(minWidth: 0, maxWidth: .infinity)
-                
-              Spacer()
-            }
+            NotariaPicker(notaria: $notaria, show: $show)
         }
-        .background(Color.blue)
-        .cornerRadius(15)
-        .shadow(radius: 15)
-        .frame(height: 300)
+        .cornerRadius(20)
+        .shadow(color: .primary, radius: 20)
+        .frame(height: 400)
     }
 }

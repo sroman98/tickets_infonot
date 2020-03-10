@@ -11,6 +11,7 @@ import SwiftUI
 struct CreateTicketView: View {
     @State var text = ""
     @State var showBottomCard = false
+    @State var notaria = Notaria(notaria: "")
     
     var body: some View {
         ZStack(alignment: .bottomLeading) {
@@ -26,7 +27,7 @@ struct CreateTicketView: View {
                             TextFieldWithTitle(title: "Teléfono", placeholder: "(442) 123-4567", value: $text)
                             ButtonWithTitle(title: "Notaría", action: {
                                 self.showBottomCard.toggle()
-                            })
+                            }, notaria: notaria)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                         }
                     }
@@ -38,7 +39,7 @@ struct CreateTicketView: View {
                             .padding(.bottom, 5)
                         ButtonWithTitle(title: "Departamento", action: {
                             self.showBottomCard.toggle()
-                        })
+                        }, notaria: notaria)
                             .padding(.bottom, 8)
                         TextFieldWithTitle(title: "Asunto", placeholder: "Resumen del problema", value: $text)
                         MultilineTFWithTitle(title: "Descripción", placeholder: "Describe aquí el problema...", lines: 4, value: $text)
@@ -57,7 +58,7 @@ struct CreateTicketView: View {
                 )
             }
             
-            BottomModal(show: $showBottomCard)
+            BottomModal(show: $showBottomCard, notaria: $notaria)
                 .offset(y: showBottomCard ? 0 : UIScreen.main.bounds.height)
                 .animation(.easeInOut(duration: 0.3))
         }
