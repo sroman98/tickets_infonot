@@ -67,16 +67,17 @@ struct MunicipioList: View {
 }
 
 struct NotariaList: View {
-    let modelData: [Notaria] =
-        [Notaria(notaria: "Not 1"),
-        Notaria(notaria: "Not 2"),
-        Notaria(notaria: "Not 3"),
-        Notaria(notaria: "Not 4")]
+    let modelData =
+        [Notaria(id: 1, numero: 1, telefono: "4421234567", municipio: Municipio(id: 1, nombre: "Queretaro", estado: Estado(id: 1, nombre: "Queretaro")), direccion: Direccion(id: 1, calle: "Corregidora Nte", numExt: 70, numInt: 104, colonia: "Centro", municipio: Municipio(id: 1, nombre: "Queretaro", estado: Estado(id: 1, nombre: "Queretaro")), cp: 76000), notario: "Juan Perez"),
+        Notaria(id: 2, numero: 2, telefono: "4421234567", municipio: Municipio(id: 1, nombre: "Queretaro", estado: Estado(id: 1, nombre: "Queretaro")), direccion: Direccion(id: 1, calle: "Corregidora Nte", numExt: 70, numInt: 104, colonia: "Centro", municipio: Municipio(id: 1, nombre: "Queretaro", estado: Estado(id: 1, nombre: "Queretaro")), cp: 76000), notario: "Juan Perez"),
+        Notaria(id: 3, numero: 3, telefono: "4421234567", municipio: Municipio(id: 1, nombre: "Queretaro", estado: Estado(id: 1, nombre: "Queretaro")), direccion: Direccion(id: 1, calle: "Corregidora Nte", numExt: 70, numInt: 104, colonia: "Centro", municipio: Municipio(id: 1, nombre: "Queretaro", estado: Estado(id: 1, nombre: "Queretaro")), cp: 76000), notario: "Juan Perez"),
+        Notaria(id: 4, numero: 4, telefono: "4421234567", municipio: Municipio(id: 1, nombre: "Queretaro", estado: Estado(id: 1, nombre: "Queretaro")), direccion: Direccion(id: 1, calle: "Corregidora Nte", numExt: 70, numInt: 104, colonia: "Centro", municipio: Municipio(id: 1, nombre: "Queretaro", estado: Estado(id: 1, nombre: "Queretaro")), cp: 76000), notario: "Juan Perez")]
+    
     @Binding var notaria: Notaria
     @Binding var show: Bool
     var body: some View {
         List(modelData) { not in
-            Button(not.notaria) {
+            Button("\(not.numero)") {
                 self.notaria = not
                 self.show.toggle()
             }

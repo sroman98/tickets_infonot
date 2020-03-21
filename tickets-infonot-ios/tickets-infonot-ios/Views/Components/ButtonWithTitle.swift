@@ -13,20 +13,20 @@ typealias VoidHandler = ()  -> Void
 struct ButtonWithTitle: View {
     let title: String
     let action: VoidHandler
-    let notaria: Notaria
+    let selectedText: String
     
     var body: some View {
         VStack(alignment: .leading) {
             Text(title)
                 .fontWeight(.thin)
             
-            if notaria.notaria == "" {
+            if selectedText == "" {
                 Button("Seleccionar") {
                     self.action()
                 }
             } else {
                 HStack {
-                    Text(notaria.notaria)
+                    Text(selectedText)
                         
                     Button(action: {
                         self.action()

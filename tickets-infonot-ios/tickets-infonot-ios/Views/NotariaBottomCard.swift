@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct BottomModal: View {
+struct NotariaBottomCard: View {
     @Binding var show: Bool
     @Binding var notaria: Notaria
     
@@ -17,7 +17,8 @@ struct BottomModal: View {
             NotariaPicker(notaria: $notaria, show: $show)
         }
         .cornerRadius(20)
-        .shadow(color: .primary, radius: 20)
+        .shadow(color: .primary, radius: 15)
         .frame(height: 400)
+        .padding([.leading, .trailing])
     }
 }
