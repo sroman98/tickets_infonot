@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             window.rootViewController = UIHostingController(
-                rootView: CreateTicketView(notaria: Notaria(), departamento: Departamento())
+                rootView: CreateTicketView(viewModel: CreateTicketView.ViewModel())
             )
             self.window = window
             window.makeKeyAndVisible()

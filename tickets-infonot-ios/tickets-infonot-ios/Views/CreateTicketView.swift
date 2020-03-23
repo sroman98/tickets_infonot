@@ -9,15 +9,8 @@
 import SwiftUI
 
 struct CreateTicketView: View {
-    @State var nombre = ""
-    @State var correo = ""
-    @State var telefono = ""
-    @State var showNotPicker = false
-    @State var notaria: Notaria
-    @State var showDptoPicker = false
-    @State var departamento: Departamento
-    @State var asunto = ""
-    @State var descripcion = ""
+    
+    @ObservedObject var viewModel: ViewModel
     
     var body: some View {
         ZStack(alignment: .bottomLeading) {
@@ -27,13 +20,13 @@ struct CreateTicketView: View {
                         Text("Información de contacto")
                             .subtitle()
                             .padding(.bottom, 5)
-                        TextFieldWithTitle(title: "Nombre", placeholder: "Juana Pérez", value: $nombre)
-                        TextFieldWithTitle(title: "Correo", placeholder: "juana@notaria01.com", value: $correo)
+                        TextFieldWithTitle(title: "Nombre", placeholder: "Juana Pérez", value: $viewModel.nombre)
+                        TextFieldWithTitle(title: "Correo", placeholder: "juana@notaria01.com", value: $viewModel.correo)
                         HStack {
-                            TextFieldWithTitle(title: "Teléfono", placeholder: "(442) 123-4567", value: $telefono)
+                            TextFieldWithTitle(title: "Teléfono", placeholder: "(442) 123-4567", value: $viewModel.telefono)
                             ButtonWithTitle(title: "Notaría", action: {
-                                self.showNotPicker.toggle()
-                            }, selectedText: notaria.id == 0 ? "" : "\(notaria.municipio.nombre) \(notaria.numero)")
+                                self.viewModel.showNotPicker.toggle()
+                            }, selectedText: viewModel.notaria.id == 0 ? "" : "\(viewModel.notaria.municipio.nombre) \(viewModel.notaria.numero)")
                                 .frame(maxWidth: .infinity, alignment: .leading)
                         }
                     }
@@ -44,11 +37,11 @@ struct CreateTicketView: View {
                             .subtitle()
                             .padding(.bottom, 5)
                         ButtonWithTitle(title: "Departamento", action: {
-                            self.showDptoPicker.toggle()
-                        }, selectedText: departamento.nombre)
+                            self.viewModel.showDptoPicker.toggle()
+                        }, selectedText: viewModel.departamento.nombre)
                             .padding(.bottom, 8)
-                        TextFieldWithTitle(title: "Asunto", placeholder: "Resumen del problema", value: $asunto)
-                        MultilineTFWithTitle(title: "Descripción", placeholder: "Describe aquí el problema...", lines: 4, value: $descripcion)
+                        TextFieldWithTitle(title: "Asunto", placeholder: "Resumen del problema", value: $viewModel.asunto)
+                        MultilineTFWithTitle(title: "Descripción", placeholder: "Describe aquí el problema...", lines: 4, value: $viewModel.descripcion)
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     
@@ -63,23 +56,23 @@ struct CreateTicketView: View {
                     }
                 )
             }
-            .disabled(showDptoPicker || showNotPicker)
+            .disabled(viewModel.showDptoPicker || viewModel.showNotPicker)
             
-            NotariaBottomCard(show: $showNotPicker, notaria: $notaria)
-                .offset(y: showNotPicker ? 0 : UIScreen.main.bounds.height)
+            NotariaBottomCard(show: $viewModel.showNotPicker, notaria: $viewModel.notaria)
+                .offset(y: viewModel.showNotPicker ? 0 : UIScreen.main.bounds.height)
                 .animation(.easeInOut(duration: 0.3))
-                .disabled(showDptoPicker)
+                .disabled(viewModel.showDptoPicker)
             
-            DepartamentoBottomCard(show: $showDptoPicker, departamento: $departamento)
-                .offset(y: showDptoPicker ? 0 : UIScreen.main.bounds.height)
+            DepartamentoBottomCard(show: $viewModel.showDptoPicker, departamento: $viewModel.departamento)
+                .offset(y: viewModel.showDptoPicker ? 0 : UIScreen.main.bounds.height)
                 .animation(.easeInOut(duration: 0.3))
-                .disabled(showNotPicker)
+                .disabled(viewModel.showNotPicker)
         }
     }
 }
 
 struct CreateTicketView_Previews: PreviewProvider {
     static var previews: some View {
-        CreateTicketView(notaria: Notaria(), departamento: Departamento())
+        CreateTicketView(viewModel: CreateTicketView.ViewModel())
     }
 }

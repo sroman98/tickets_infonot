@@ -21,6 +21,7 @@
 		7B638D08240F17AF00052C0A /* Subtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B638D07240F17AF00052C0A /* Subtitle.swift */; };
 		7B638D0A240F287500052C0A /* TextFieldWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B638D09240F287500052C0A /* TextFieldWithTitle.swift */; };
 		7B638D0D24104BE100052C0A /* ButtonWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B638D0C24104BE100052C0A /* ButtonWithTitle.swift */; };
+		7B88283024296FA300FD2F3A /* CreateTicketVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B88282F24296FA300FD2F3A /* CreateTicketVM.swift */; };
 		7BE81742241BFBF50083A2EF /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE81741241BFBF50083A2EF /* Usuario.swift */; };
 		7BE81744241BFC000083A2EF /* Mensaje.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE81743241BFC000083A2EF /* Mensaje.swift */; };
 		7BE81746241BFC120083A2EF /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE81745241BFC120083A2EF /* Ticket.swift */; };
@@ -79,6 +80,7 @@
 		7B638D07240F17AF00052C0A /* Subtitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subtitle.swift; sourceTree = "<group>"; };
 		7B638D09240F287500052C0A /* TextFieldWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithTitle.swift; sourceTree = "<group>"; };
 		7B638D0C24104BE100052C0A /* ButtonWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithTitle.swift; sourceTree = "<group>"; };
+		7B88282F24296FA300FD2F3A /* CreateTicketVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTicketVM.swift; sourceTree = "<group>"; };
 		7BE81741241BFBF50083A2EF /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		7BE81743241BFC000083A2EF /* Mensaje.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mensaje.swift; sourceTree = "<group>"; };
 		7BE81745241BFC120083A2EF /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
@@ -169,7 +171,7 @@
 		7B54109923EBC93B000167CC /* tickets-infonot-ios */ = {
 			isa = PBXGroup;
 			children = (
-				7B5410CC23EBD494000167CC /* View Models */,
+				7B5410CC23EBD494000167CC /* ViewModels */,
 				7B5410CB23EBD48F000167CC /* Models */,
 				7B5410CA23EBD46A000167CC /* Views */,
 				7B54109A23EBC93B000167CC /* AppDelegate.swift */,
@@ -240,11 +242,12 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		7B5410CC23EBD494000167CC /* View Models */ = {
+		7B5410CC23EBD494000167CC /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				7B88282F24296FA300FD2F3A /* CreateTicketVM.swift */,
 			);
-			path = "View Models";
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		7B638D06240F179C00052C0A /* Styles */ = {
@@ -533,6 +536,7 @@
 				7BFB9E5623EBDB25002BBF02 /* CreateTicketView.swift in Sources */,
 				7BE8174C241C00300083A2EF /* Estatus.swift in Sources */,
 				7BF7D42924142D9E00050C4D /* MultilineTFWithTitle.swift in Sources */,
+				7B88283024296FA300FD2F3A /* CreateTicketVM.swift in Sources */,
 				7B638D08240F17AF00052C0A /* Subtitle.swift in Sources */,
 				7BF7D42D2415855B00050C4D /* NotariaPicker.swift in Sources */,
 				7BF7D4252414226F00050C4D /* MultilineTextField.swift in Sources */,
