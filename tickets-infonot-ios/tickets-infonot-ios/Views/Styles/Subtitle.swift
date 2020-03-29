@@ -13,7 +13,6 @@ extension Text {
         self
             .font(.title)
             .fontWeight(.thin)
-        .underline()
-//            .foregroundColor(Color.blue)
+            .underline()
     }
 }

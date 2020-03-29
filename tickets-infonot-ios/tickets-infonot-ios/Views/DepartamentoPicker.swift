@@ -16,22 +16,24 @@ struct DepartamentoPicker: View {
             Departamento(id: 3, nombre: "Respaldos")
         ]
     
-    @Binding var departamento: Departamento
     @Binding var show: Bool
+    @Binding var departamento: Departamento
     
     var body: some View {
-        NavigationView {
-            List(modelData) { dpto in
-                Button(dpto.nombre) {
-                    self.departamento = dpto
-                    self.show.toggle()
+        VStack{
+            NavigationView {
+                List(modelData) { dpto in
+                    Button(dpto.nombre) {
+                        self.departamento = dpto
+                        self.show.toggle()
+                    }
                 }
+                .navigationBarTitle("Departamento")
+                .navigationBarItems(trailing: Button("Cancelar") {
+                    self.show.toggle()
+                })
             }
-            .navigationBarTitle("Departamento")
-            .navigationBarItems(trailing: Button("Cancelar") {
-                self.show.toggle()
-            })
         }
-        
+        .card(show: show)
     }
 }

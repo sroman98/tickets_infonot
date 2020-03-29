@@ -19,13 +19,5 @@ extension CreateTicketView {
         @Published var departamento = Departamento()
         @Published var asunto = ""
         @Published var descripcion = ""
-        
-//        private let service: WebService
-        
-//        func loadSomething() {
-//            service.getCountries { [weak self] result in
-//                self?.countries = result.value ?? []
-//            }
-//        }
     }
 }

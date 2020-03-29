@@ -9,11 +9,14 @@
 import SwiftUI
 
 struct NotariaPicker: View {
-    @Binding var notaria: Notaria
     @Binding var show: Bool
+    @Binding var notaria: Notaria
     
     var body: some View {
-        EstadoList(notaria: $notaria, show: $show)
+        VStack {
+            EstadoList(notaria: $notaria, show: $show)
+        }
+        .card(show: show)
     }
 }
 

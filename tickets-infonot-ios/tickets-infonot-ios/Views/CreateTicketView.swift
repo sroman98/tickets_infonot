@@ -58,15 +58,9 @@ struct CreateTicketView: View {
             }
             .disabled(viewModel.showDptoPicker || viewModel.showNotPicker)
             
-            NotariaBottomCard(show: $viewModel.showNotPicker, notaria: $viewModel.notaria)
-                .offset(y: viewModel.showNotPicker ? 0 : UIScreen.main.bounds.height)
-                .animation(.easeInOut(duration: 0.3))
-                .disabled(viewModel.showDptoPicker)
+            NotariaPicker(show: $viewModel.showNotPicker, notaria: $viewModel.notaria)
             
-            DepartamentoBottomCard(show: $viewModel.showDptoPicker, departamento: $viewModel.departamento)
-                .offset(y: viewModel.showDptoPicker ? 0 : UIScreen.main.bounds.height)
-                .animation(.easeInOut(duration: 0.3))
-                .disabled(viewModel.showNotPicker)
+            DepartamentoPicker(show: $viewModel.showDptoPicker, departamento: $viewModel.departamento)
         }
     }
 }

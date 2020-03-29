@@ -17,10 +17,10 @@
 		7B5410B223EBC93F000167CC /* tickets_infonot_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5410B123EBC93F000167CC /* tickets_infonot_iosTests.swift */; };
 		7B5410BD23EBC93F000167CC /* tickets_infonot_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5410BC23EBC93F000167CC /* tickets_infonot_iosUITests.swift */; };
 		7B5A98F62425C4D800ED0B8F /* DepartamentoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5A98F52425C4D800ED0B8F /* DepartamentoPicker.swift */; };
-		7B5A98F92425C6F300ED0B8F /* DepartamentoBottomCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5A98F82425C6F300ED0B8F /* DepartamentoBottomCard.swift */; };
 		7B638D08240F17AF00052C0A /* Subtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B638D07240F17AF00052C0A /* Subtitle.swift */; };
 		7B638D0A240F287500052C0A /* TextFieldWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B638D09240F287500052C0A /* TextFieldWithTitle.swift */; };
 		7B638D0D24104BE100052C0A /* ButtonWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B638D0C24104BE100052C0A /* ButtonWithTitle.swift */; };
+		7B7BBA14243148DC00F279E1 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7BBA13243148DC00F279E1 /* Card.swift */; };
 		7B88283024296FA300FD2F3A /* CreateTicketVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B88282F24296FA300FD2F3A /* CreateTicketVM.swift */; };
 		7BE81742241BFBF50083A2EF /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE81741241BFBF50083A2EF /* Usuario.swift */; };
 		7BE81744241BFC000083A2EF /* Mensaje.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE81743241BFC000083A2EF /* Mensaje.swift */; };
@@ -34,7 +34,6 @@
 		7BE81754241C005A0083A2EF /* Direccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE81753241C005A0083A2EF /* Direccion.swift */; };
 		7BF7D4252414226F00050C4D /* MultilineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF7D4242414226F00050C4D /* MultilineTextField.swift */; };
 		7BF7D42924142D9E00050C4D /* MultilineTFWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF7D42824142D9E00050C4D /* MultilineTFWithTitle.swift */; };
-		7BF7D42B2414328900050C4D /* NotariaBottomCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF7D42A2414328900050C4D /* NotariaBottomCard.swift */; };
 		7BF7D42D2415855B00050C4D /* NotariaPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF7D42C2415855B00050C4D /* NotariaPicker.swift */; };
 		7BFB9E5623EBDB25002BBF02 /* CreateTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFB9E5523EBDB25002BBF02 /* CreateTicketView.swift */; };
 		7BFB9E6023EDE099002BBF02 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFB9E5F23EDE099002BBF02 /* Constants.swift */; };
@@ -76,10 +75,10 @@
 		7B5410BC23EBC93F000167CC /* tickets_infonot_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tickets_infonot_iosUITests.swift; sourceTree = "<group>"; };
 		7B5410BE23EBC93F000167CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B5A98F52425C4D800ED0B8F /* DepartamentoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartamentoPicker.swift; sourceTree = "<group>"; };
-		7B5A98F82425C6F300ED0B8F /* DepartamentoBottomCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartamentoBottomCard.swift; sourceTree = "<group>"; };
 		7B638D07240F17AF00052C0A /* Subtitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subtitle.swift; sourceTree = "<group>"; };
 		7B638D09240F287500052C0A /* TextFieldWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithTitle.swift; sourceTree = "<group>"; };
 		7B638D0C24104BE100052C0A /* ButtonWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithTitle.swift; sourceTree = "<group>"; };
+		7B7BBA13243148DC00F279E1 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		7B88282F24296FA300FD2F3A /* CreateTicketVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTicketVM.swift; sourceTree = "<group>"; };
 		7BE81741241BFBF50083A2EF /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		7BE81743241BFC000083A2EF /* Mensaje.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mensaje.swift; sourceTree = "<group>"; };
@@ -93,7 +92,6 @@
 		7BE81753241C005A0083A2EF /* Direccion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direccion.swift; sourceTree = "<group>"; };
 		7BF7D4242414226F00050C4D /* MultilineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextField.swift; sourceTree = "<group>"; };
 		7BF7D42824142D9E00050C4D /* MultilineTFWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTFWithTitle.swift; sourceTree = "<group>"; };
-		7BF7D42A2414328900050C4D /* NotariaBottomCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotariaBottomCard.swift; sourceTree = "<group>"; };
 		7BF7D42C2415855B00050C4D /* NotariaPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotariaPicker.swift; sourceTree = "<group>"; };
 		7BFB9E5523EBDB25002BBF02 /* CreateTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTicketView.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7BFB9E5F23EDE099002BBF02 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -217,8 +215,6 @@
 				7B638D0B24104B9100052C0A /* Components */,
 				7B638D06240F179C00052C0A /* Styles */,
 				7BFB9E5523EBDB25002BBF02 /* CreateTicketView.swift */,
-				7BF7D42A2414328900050C4D /* NotariaBottomCard.swift */,
-				7B5A98F82425C6F300ED0B8F /* DepartamentoBottomCard.swift */,
 				7BF7D42C2415855B00050C4D /* NotariaPicker.swift */,
 				7B5A98F52425C4D800ED0B8F /* DepartamentoPicker.swift */,
 			);
@@ -253,6 +249,7 @@
 		7B638D06240F179C00052C0A /* Styles */ = {
 			isa = PBXGroup;
 			children = (
+				7B7BBA13243148DC00F279E1 /* Card.swift */,
 				7B638D07240F17AF00052C0A /* Subtitle.swift */,
 			);
 			path = Styles;
@@ -524,7 +521,6 @@
 				7BE81744241BFC000083A2EF /* Mensaje.swift in Sources */,
 				7BE81750241C003F0083A2EF /* Municipio.swift in Sources */,
 				7B54109B23EBC93B000167CC /* AppDelegate.swift in Sources */,
-				7B5A98F92425C6F300ED0B8F /* DepartamentoBottomCard.swift in Sources */,
 				7BE81754241C005A0083A2EF /* Direccion.swift in Sources */,
 				7B638D0D24104BE100052C0A /* ButtonWithTitle.swift in Sources */,
 				7B54109D23EBC93B000167CC /* SceneDelegate.swift in Sources */,
@@ -534,6 +530,7 @@
 				7BE81746241BFC120083A2EF /* Ticket.swift in Sources */,
 				7B5A98F62425C4D800ED0B8F /* DepartamentoPicker.swift in Sources */,
 				7BFB9E5623EBDB25002BBF02 /* CreateTicketView.swift in Sources */,
+				7B7BBA14243148DC00F279E1 /* Card.swift in Sources */,
 				7BE8174C241C00300083A2EF /* Estatus.swift in Sources */,
 				7BF7D42924142D9E00050C4D /* MultilineTFWithTitle.swift in Sources */,
 				7B88283024296FA300FD2F3A /* CreateTicketVM.swift in Sources */,
@@ -541,7 +538,6 @@
 				7BF7D42D2415855B00050C4D /* NotariaPicker.swift in Sources */,
 				7BF7D4252414226F00050C4D /* MultilineTextField.swift in Sources */,
 				7BE8174E241C00380083A2EF /* Notaria.swift in Sources */,
-				7BF7D42B2414328900050C4D /* NotariaBottomCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
