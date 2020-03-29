@@ -15,4 +15,8 @@ struct Notaria: Identifiable {
     var municipio: Municipio = Municipio()
     var direccion: Direccion = Direccion()
     var notario: String = ""
+    
+    func getName() -> String {
+        return id == 0 ? "" : "\(municipio.nombre) \(numero)"
+    }
 }

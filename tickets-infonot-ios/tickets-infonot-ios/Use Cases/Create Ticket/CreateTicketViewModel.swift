@@ -1,5 +1,5 @@
 //
-//  CreateTicketVM.swift
+//  CreateTicketViewModel.swift
 //  tickets-infonot-ios
 //
 //  Created by Sandra Roman on 23/03/20.

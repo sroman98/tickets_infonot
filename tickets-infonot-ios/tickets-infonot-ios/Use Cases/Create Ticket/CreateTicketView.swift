@@ -9,7 +9,6 @@
 import SwiftUI
 
 struct CreateTicketView: View {
-    
     @ObservedObject var viewModel: ViewModel
     
     var body: some View {
@@ -26,7 +25,7 @@ struct CreateTicketView: View {
                             TextFieldWithTitle(title: "Teléfono", placeholder: "(442) 123-4567", value: $viewModel.telefono)
                             ButtonWithTitle(title: "Notaría", action: {
                                 self.viewModel.showNotPicker.toggle()
-                            }, selectedText: viewModel.notaria.id == 0 ? "" : "\(viewModel.notaria.municipio.nombre) \(viewModel.notaria.numero)")
+                            }, selectedText: viewModel.notaria.getName())
                                 .frame(maxWidth: .infinity, alignment: .leading)
                         }
                     }
