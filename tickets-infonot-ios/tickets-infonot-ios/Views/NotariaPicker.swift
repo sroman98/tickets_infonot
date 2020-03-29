@@ -16,7 +16,7 @@ struct NotariaPicker: View {
         VStack {
             EstadoList(notaria: $notaria, show: $show)
         }
-        .card(show: show)
+        .bottomCard(show: show)
     }
 }
 

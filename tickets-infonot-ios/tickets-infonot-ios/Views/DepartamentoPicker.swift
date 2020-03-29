@@ -34,6 +34,6 @@ struct DepartamentoPicker: View {
                 })
             }
         }
-        .card(show: show)
+        .bottomCard(show: show)
     }
 }

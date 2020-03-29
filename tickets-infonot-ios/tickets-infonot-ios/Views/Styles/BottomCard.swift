@@ -1,5 +1,5 @@
 //
-//  Card.swift
+//  BottomCard.swift
 //  tickets-infonot-ios
 //
 //  Created by Sandra Roman on 29/03/20.
@@ -9,7 +9,7 @@
 import SwiftUI
 
 extension View {
-    func card(show: Bool) -> some View {
+    func bottomCard(show: Bool) -> some View {
         self
             .cornerRadius(20)
             .shadow(color: .primary, radius: 15)

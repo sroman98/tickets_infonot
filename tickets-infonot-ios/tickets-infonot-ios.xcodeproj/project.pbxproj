@@ -20,7 +20,7 @@
 		7B638D08240F17AF00052C0A /* Subtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B638D07240F17AF00052C0A /* Subtitle.swift */; };
 		7B638D0A240F287500052C0A /* TextFieldWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B638D09240F287500052C0A /* TextFieldWithTitle.swift */; };
 		7B638D0D24104BE100052C0A /* ButtonWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B638D0C24104BE100052C0A /* ButtonWithTitle.swift */; };
-		7B7BBA14243148DC00F279E1 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7BBA13243148DC00F279E1 /* Card.swift */; };
+		7B7BBA14243148DC00F279E1 /* BottomCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7BBA13243148DC00F279E1 /* BottomCard.swift */; };
 		7B88283024296FA300FD2F3A /* CreateTicketVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B88282F24296FA300FD2F3A /* CreateTicketVM.swift */; };
 		7BE81742241BFBF50083A2EF /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE81741241BFBF50083A2EF /* Usuario.swift */; };
 		7BE81744241BFC000083A2EF /* Mensaje.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE81743241BFC000083A2EF /* Mensaje.swift */; };
@@ -78,7 +78,7 @@
 		7B638D07240F17AF00052C0A /* Subtitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subtitle.swift; sourceTree = "<group>"; };
 		7B638D09240F287500052C0A /* TextFieldWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithTitle.swift; sourceTree = "<group>"; };
 		7B638D0C24104BE100052C0A /* ButtonWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithTitle.swift; sourceTree = "<group>"; };
-		7B7BBA13243148DC00F279E1 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		7B7BBA13243148DC00F279E1 /* BottomCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCard.swift; sourceTree = "<group>"; };
 		7B88282F24296FA300FD2F3A /* CreateTicketVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTicketVM.swift; sourceTree = "<group>"; };
 		7BE81741241BFBF50083A2EF /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		7BE81743241BFC000083A2EF /* Mensaje.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mensaje.swift; sourceTree = "<group>"; };
@@ -249,7 +249,7 @@
 		7B638D06240F179C00052C0A /* Styles */ = {
 			isa = PBXGroup;
 			children = (
-				7B7BBA13243148DC00F279E1 /* Card.swift */,
+				7B7BBA13243148DC00F279E1 /* BottomCard.swift */,
 				7B638D07240F17AF00052C0A /* Subtitle.swift */,
 			);
 			path = Styles;
@@ -530,7 +530,7 @@
 				7BE81746241BFC120083A2EF /* Ticket.swift in Sources */,
 				7B5A98F62425C4D800ED0B8F /* DepartamentoPicker.swift in Sources */,
 				7BFB9E5623EBDB25002BBF02 /* CreateTicketView.swift in Sources */,
-				7B7BBA14243148DC00F279E1 /* Card.swift in Sources */,
+				7B7BBA14243148DC00F279E1 /* BottomCard.swift in Sources */,
 				7BE8174C241C00300083A2EF /* Estatus.swift in Sources */,
 				7BF7D42924142D9E00050C4D /* MultilineTFWithTitle.swift in Sources */,
 				7B88283024296FA300FD2F3A /* CreateTicketVM.swift in Sources */,
