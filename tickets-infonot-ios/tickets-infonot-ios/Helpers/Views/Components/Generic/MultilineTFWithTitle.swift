@@ -11,7 +11,7 @@ import SwiftUI
 struct MultilineTFWithTitle: View {
     var title: String
     var placeholder: String
-    var lines: Int
+    var lines: Double
     @Binding var value: String
     
     var body: some View {

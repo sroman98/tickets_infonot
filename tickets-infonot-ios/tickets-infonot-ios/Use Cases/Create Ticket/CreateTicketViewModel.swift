@@ -12,7 +12,14 @@ extension CreateTicketView {
     class ViewModel: ObservableObject {
         @Published var nombre = ""
         @Published var correo = ""
-        @Published var telefono = ""
+        @Published var telefono = "" {
+            didSet {
+                if telefono.count > 10 {
+                    telefono = oldValue
+                    UIApplication.shared.endEditing()
+                }
+            }
+        }
         @Published var showNotPicker = false
         @Published var notaria = Notaria()
         @Published var showDptoPicker = false

@@ -12,6 +12,8 @@ struct TextFieldWithTitle: View {
     var title: String
     var placeholder: String
     @Binding var value: String
+    var contentType: UITextContentType?
+    var keyboardType: UIKeyboardType?
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -19,6 +21,8 @@ struct TextFieldWithTitle: View {
                 .fontWeight(.thin)
                 .padding(.bottom, -10)
             TextField(placeholder, text: $value)
+                .textContentType(contentType)
+                .keyboardType(keyboardType ?? .default)
         }
     }
 }

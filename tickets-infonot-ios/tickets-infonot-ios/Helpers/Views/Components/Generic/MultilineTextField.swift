@@ -37,7 +37,7 @@ struct MultilineTextField: UIViewRepresentable {
         uiView.delegate = context.coordinator
     }
     
-    func frame(lines: Int) -> some View {
+    func frame(lines: Double) -> some View {
         let numLines = CGFloat(lines)
         let height = UIFont.systemFont(ofSize: FONT_SIZE).lineHeight * numLines
         return self.frame(height: height)

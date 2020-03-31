@@ -9,7 +9,8 @@
 import SwiftUI
 
 struct CreateTicketView: View {
-    @ObservedObject var viewModel: ViewModel
+    @ObservedObject private var keyboardResponder = KeyboardResponder()
+    @ObservedObject var viewModel = ViewModel()
     
     var body: some View {
         ZStack(alignment: .bottomLeading) {
@@ -19,10 +20,10 @@ struct CreateTicketView: View {
                         Text("Información de contacto")
                             .subtitle()
                             .padding(.bottom, 5)
-                        TextFieldWithTitle(title: "Nombre", placeholder: "Juana Pérez", value: $viewModel.nombre)
-                        TextFieldWithTitle(title: "Correo", placeholder: "juana@notaria01.com", value: $viewModel.correo)
+                        TextFieldWithTitle(title: "Nombre", placeholder: "Juana Pérez", value: $viewModel.nombre, contentType: .name)
+                        TextFieldWithTitle(title: "Correo", placeholder: "juana@notaria01.com", value: $viewModel.correo, contentType: .emailAddress, keyboardType: .emailAddress)
                         HStack {
-                            TextFieldWithTitle(title: "Teléfono", placeholder: "(442) 123-4567", value: $viewModel.telefono)
+                            TextFieldWithTitle(title: "Teléfono", placeholder: "(442) 123-4567", value: $viewModel.telefono, contentType: .telephoneNumber, keyboardType: .phonePad)
                             ButtonWithTitle(title: "Notaría", action: {
                                 self.viewModel.showNotPicker.toggle()
                             }, selectedText: viewModel.notaria.getName())
@@ -40,7 +41,7 @@ struct CreateTicketView: View {
                         }, selectedText: viewModel.departamento.nombre)
                             .padding(.bottom, 8)
                         TextFieldWithTitle(title: "Asunto", placeholder: "Resumen del problema", value: $viewModel.asunto)
-                        MultilineTFWithTitle(title: "Descripción", placeholder: "Describe aquí el problema...", lines: 4, value: $viewModel.descripcion)
+                        MultilineTFWithTitle(title: "Descripción", placeholder: "Describe aquí el problema...", lines: 3.5, value: $viewModel.descripcion)
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     
@@ -55,6 +56,7 @@ struct CreateTicketView: View {
                     }
                 )
             }
+            .offset(y: -keyboardResponder.currentHeight*0.5)
             .disabled(viewModel.showDptoPicker || viewModel.showNotPicker)
             
             NotariaPicker(show: $viewModel.showNotPicker, notaria: $viewModel.notaria)
@@ -66,6 +68,6 @@ struct CreateTicketView: View {
 
 struct CreateTicketView_Previews: PreviewProvider {
     static var previews: some View {
-        CreateTicketView(viewModel: CreateTicketView.ViewModel())
+        CreateTicketView()
     }
 }
