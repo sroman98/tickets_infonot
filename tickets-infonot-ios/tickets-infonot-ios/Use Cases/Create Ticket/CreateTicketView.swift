@@ -52,11 +52,11 @@ struct CreateTicketView: View {
                 .navigationBarTitle("Nuevo Ticket")
                 .navigationBarItems(trailing:
                     Button("Enviar") {
-                    
-                    }
+                        print(self.viewModel.disableForm)
+                    }.disabled(viewModel.disableForm)
                 )
             }
-            .offset(y: -keyboardResponder.currentHeight*0.5)
+            .offset(y: -keyboardResponder.currentHeight*0.0)
             .disabled(viewModel.showDptoPicker || viewModel.showNotPicker)
             
             NotariaPicker(show: $viewModel.showNotPicker, notaria: $viewModel.notaria)
